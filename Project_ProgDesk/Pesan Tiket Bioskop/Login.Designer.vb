@@ -32,7 +32,7 @@ Partial Class Login
         LblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
         LblTitle.Location = New Point(120, 30)
         LblTitle.Name = "LblTitle"
-        LblTitle.Size = New Size(211, 37)
+        LblTitle.Size = New Size(246, 45)
         LblTitle.TabIndex = 6
         LblTitle.Text = "Halaman Login"
         ' 
@@ -41,7 +41,7 @@ Partial Class Login
         LblEmail.AutoSize = True
         LblEmail.Location = New Point(50, 90)
         LblEmail.Name = "LblEmail"
-        LblEmail.Size = New Size(46, 20)
+        LblEmail.Size = New Size(54, 25)
         LblEmail.TabIndex = 5
         LblEmail.Text = "Email"
         ' 
@@ -49,7 +49,7 @@ Partial Class Login
         ' 
         TxtEmail.Location = New Point(130, 87)
         TxtEmail.Name = "TxtEmail"
-        TxtEmail.Size = New Size(200, 27)
+        TxtEmail.Size = New Size(200, 31)
         TxtEmail.TabIndex = 4
         ' 
         ' LblPassword
@@ -57,7 +57,7 @@ Partial Class Login
         LblPassword.AutoSize = True
         LblPassword.Location = New Point(50, 130)
         LblPassword.Name = "LblPassword"
-        LblPassword.Size = New Size(80, 20)
+        LblPassword.Size = New Size(95, 25)
         LblPassword.TabIndex = 3
         LblPassword.Text = "Kata Sandi"
         ' 
@@ -66,7 +66,7 @@ Partial Class Login
         TxtPassword.Location = New Point(130, 127)
         TxtPassword.Name = "TxtPassword"
         TxtPassword.PasswordChar = "*"c
-        TxtPassword.Size = New Size(200, 27)
+        TxtPassword.Size = New Size(200, 31)
         TxtPassword.TabIndex = 2
         ' 
         ' BtnLogin
