@@ -1,4 +1,4 @@
-# Project_Pemrograman_Desktop_Biosko
+# Project_Pemrograman_Desktop_Bioskop
 - Cynthia Angeline / 71220858
 - Samuel Natanael / 71231050
 - Fransina Riyanty Batlayar / 71231014
