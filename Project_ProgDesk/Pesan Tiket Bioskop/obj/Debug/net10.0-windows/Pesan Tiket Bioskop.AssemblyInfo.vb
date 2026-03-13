@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Pesan Tiket Bioskop"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ce019b5aa55ecc25abc8b2ade933b6495851ad1"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c03229239bac9fc7b22207446c5335d743d325f"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Pesan Tiket Bioskop"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Pesan Tiket Bioskop"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
