@@ -36,3 +36,41 @@ D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Proj
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.pdb
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.genruntimeconfig.cache
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\ref\Pesan Tiket Bioskop.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Pesan Tiket Bioskop.exe
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Pesan Tiket Bioskop.deps.json
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Pesan Tiket Bioskop.runtimeconfig.json
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Pesan Tiket Bioskop.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Pesan Tiket Bioskop.pdb
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\BouncyCastle.Cryptography.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Google.Protobuf.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\K4os.Compression.LZ4.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\K4os.Hash.xxHash.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\MySql.Data.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\ZstdSharp.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.vbproj.AssemblyReference.cache
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Beranda.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.E_Ticket___Kode_QR.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Konfirmasi_Pembayaran.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Login.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Pilih_Jadwal.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Pilih_Kursi.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Pilih_Studio.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Register.resources
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.vbproj.GenerateResource.cache
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.AssemblyInfoInputs.cache
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.AssemblyInfo.vb
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.vbproj.CoreCompileInputs.cache
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.sourcelink.json
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Ti.C97E5A3F.Up2Date
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\refint\Pesan Tiket Bioskop.dll
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.pdb
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.genruntimeconfig.cache
+D:\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\ref\Pesan Tiket Bioskop.dll
