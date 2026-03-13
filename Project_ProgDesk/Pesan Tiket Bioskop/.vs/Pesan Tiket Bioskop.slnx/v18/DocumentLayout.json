@@ -30,6 +30,32 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< Updated upstream
+=======
+              "DocumentIndex": 5,
+              "Title": "Login.Designer.vb",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.Designer.vb",
+              "RelativeDocumentMoniker": "Login.Designer.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.Designer.vb",
+              "RelativeToolTip": "Login.Designer.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-13T06:36:25.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.resx",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.resx",
+              "RelativeDocumentMoniker": "Login.resx",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.resx",
+              "RelativeToolTip": "Login.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-03-13T06:36:23.74Z"
+            },
+            {
+              "$type": "Document",
+>>>>>>> Stashed changes
               "DocumentIndex": 2,
               "Title": "Login.vb",
               "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
@@ -38,8 +64,36 @@
               "RelativeToolTip": "Login.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+<<<<<<< Updated upstream
               "WhenOpened": "2026-03-13T05:44:38.808Z",
               "IsPinned": true,
+=======
+              "WhenOpened": "2026-03-13T05:44:38.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.vb [Design]",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
+              "RelativeDocumentMoniker": "Login.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb [Design]",
+              "RelativeToolTip": "Login.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-13T05:40:19.014Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.vb",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Register.vb",
+              "RelativeDocumentMoniker": "Register.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Register.vb",
+              "RelativeToolTip": "Register.vb",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-03-13T06:29:51.781Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
@@ -65,6 +119,7 @@
               "RelativeToolTip": "Module1.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+<<<<<<< Updated upstream
               "WhenOpened": "2026-03-13T05:58:30.87Z",
               "EditorCaption": ""
             },
@@ -79,6 +134,9 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-03-13T05:40:19.014Z",
               "EditorCaption": " [Design]"
+=======
+              "WhenOpened": "2026-03-13T05:58:30.87Z"
+>>>>>>> Stashed changes
             }
           ]
         }

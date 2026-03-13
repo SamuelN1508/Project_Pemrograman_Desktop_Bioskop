@@ -14,10 +14,10 @@ Public Class Login
             BukaKoneksi()
 
             ' Query ke tabel Users
-            Dim query As String = "SELECT * FROM Users WHERE Email = @email AND Password = @password"
+            Dim query As String = "SELECT * FROM Users WHERE (Email = @input OR Nama = @input) AND Password = @password"
             Dim cmd As New MySqlCommand(query, KoneksiDB) ' Perhatikan penggunaan MySqlCommand
 
-            cmd.Parameters.AddWithValue("@email", TxtEmail.Text)
+            cmd.Parameters.AddWithValue("@input", TxtEmail.Text)
             cmd.Parameters.AddWithValue("@password", TxtPassword.Text)
 
             ' Eksekusi pembacaan data
@@ -56,6 +56,19 @@ Public Class Login
 
     End Sub
 
+<<<<<<< Updated upstream
+=======
+    Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click
+        Dim halRegister As New Register()
+        halRegister.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LblEmail_Click(sender As Object, e As EventArgs) Handles LblEmail.Click
+
+    End Sub
+
+>>>>>>> Stashed changes
     ' ... (Kode untuk BtnRegister_Click dan TxtPassword_KeyDown biarkan sama) ...
 
 End Class

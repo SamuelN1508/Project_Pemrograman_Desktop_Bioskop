@@ -30,7 +30,7 @@ Partial Class Login
         ' 
         LblTitle.AutoSize = True
         LblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
-        LblTitle.Location = New Point(120, 30)
+        LblTitle.Location = New Point(144, 38)
         LblTitle.Name = "LblTitle"
         LblTitle.Size = New Size(211, 37)
         LblTitle.TabIndex = 6
@@ -39,15 +39,19 @@ Partial Class Login
         ' LblEmail
         ' 
         LblEmail.AutoSize = True
-        LblEmail.Location = New Point(50, 90)
+        LblEmail.Location = New Point(8, 98)
         LblEmail.Name = "LblEmail"
+<<<<<<< Updated upstream
         LblEmail.Size = New Size(46, 20)
+=======
+        LblEmail.Size = New Size(140, 25)
+>>>>>>> Stashed changes
         LblEmail.TabIndex = 5
-        LblEmail.Text = "Email"
+        LblEmail.Text = "Email/Username"
         ' 
         ' TxtEmail
         ' 
-        TxtEmail.Location = New Point(130, 87)
+        TxtEmail.Location = New Point(154, 95)
         TxtEmail.Name = "TxtEmail"
         TxtEmail.Size = New Size(200, 27)
         TxtEmail.TabIndex = 4
@@ -55,7 +59,7 @@ Partial Class Login
         ' LblPassword
         ' 
         LblPassword.AutoSize = True
-        LblPassword.Location = New Point(50, 130)
+        LblPassword.Location = New Point(8, 141)
         LblPassword.Name = "LblPassword"
         LblPassword.Size = New Size(80, 20)
         LblPassword.TabIndex = 3
@@ -63,7 +67,7 @@ Partial Class Login
         ' 
         ' TxtPassword
         ' 
-        TxtPassword.Location = New Point(130, 127)
+        TxtPassword.Location = New Point(154, 135)
         TxtPassword.Name = "TxtPassword"
         TxtPassword.PasswordChar = "*"c
         TxtPassword.Size = New Size(200, 27)
@@ -73,7 +77,7 @@ Partial Class Login
         ' 
         BtnLogin.BackColor = Color.Teal
         BtnLogin.ForeColor = Color.White
-        BtnLogin.Location = New Point(130, 170)
+        BtnLogin.Location = New Point(154, 178)
         BtnLogin.Name = "BtnLogin"
         BtnLogin.Size = New Size(80, 30)
         BtnLogin.TabIndex = 1
@@ -84,7 +88,7 @@ Partial Class Login
         ' 
         BtnRegister.BackColor = Color.Teal
         BtnRegister.ForeColor = Color.White
-        BtnRegister.Location = New Point(220, 170)
+        BtnRegister.Location = New Point(244, 178)
         BtnRegister.Name = "BtnRegister"
         BtnRegister.Size = New Size(110, 30)
         BtnRegister.TabIndex = 0
