@@ -56,6 +56,12 @@ Public Class Login
 
     End Sub
 
+    Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click
+        Dim halRegister As New Register()
+        halRegister.Show()
+        Me.Hide()
+    End Sub
+
     ' ... (Kode untuk BtnRegister_Click dan TxtPassword_KeyDown biarkan sama) ...
 
 End Class
