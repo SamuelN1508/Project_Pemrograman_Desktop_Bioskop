@@ -56,19 +56,17 @@ Public Class Login
 
     End Sub
 
-<<<<<<< Updated upstream
-=======
+    ' ── Tombol Register → Buka Form Register ─────────────
     Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click
         Dim halRegister As New Register()
         halRegister.Show()
         Me.Hide()
     End Sub
 
+    ' ── Label Email (kosong, placeholder event) ───────────
     Private Sub LblEmail_Click(sender As Object, e As EventArgs) Handles LblEmail.Click
 
     End Sub
-
->>>>>>> Stashed changes
     ' ... (Kode untuk BtnRegister_Click dan TxtPassword_KeyDown biarkan sama) ...
 
 End Class

@@ -3,31 +3,24 @@
   "WorkspaceRootPath": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\my project\\application.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:my project\\application.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-=======
       "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\register.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:register.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\register.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:register.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
->>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\login.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:login.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-<<<<<<< Updated upstream
-=======
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\login.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -36,7 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -50,32 +42,6 @@
           "Children": [
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 2,
-              "Title": "Login.vb",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
-              "RelativeDocumentMoniker": "Login.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
-              "RelativeToolTip": "Login.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T05:44:38.808Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Application.Designer.vb",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\My Project\\Application.Designer.vb",
-              "RelativeDocumentMoniker": "My Project\\Application.Designer.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\My Project\\Application.Designer.vb",
-              "RelativeToolTip": "My Project\\Application.Designer.vb",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwB4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T06:10:56.456Z",
-              "EditorCaption": ""
-=======
               "DocumentIndex": 5,
               "Title": "Login.Designer.vb",
               "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.Designer.vb",
@@ -84,7 +50,8 @@
               "RelativeToolTip": "Login.Designer.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T06:36:25.775Z"
+              "WhenOpened": "2026-03-13T06:36:25.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -95,7 +62,8 @@
               "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.resx",
               "RelativeToolTip": "Login.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-03-13T06:36:23.74Z"
+              "WhenOpened": "2026-03-13T06:36:23.74Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -107,7 +75,8 @@
               "RelativeToolTip": "Login.vb",
               "ViewState": "AgIAAC0AAAAAAAAAAAAwwDsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T05:44:38.808Z"
+              "WhenOpened": "2026-03-13T05:44:38.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,19 +89,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-03-13T05:40:19.014Z",
               "EditorCaption": " [Design]"
->>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< Updated upstream
-=======
               "Title": "Register.vb",
               "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Register.vb",
               "RelativeDocumentMoniker": "Register.vb",
               "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Register.vb",
               "RelativeToolTip": "Register.vb",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2026-03-13T06:29:51.781Z",
               "EditorCaption": ""
@@ -152,32 +118,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
->>>>>>> Stashed changes
               "Title": "Module1.vb",
               "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Module1.vb",
               "RelativeDocumentMoniker": "Module1.vb",
               "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Module1.vb",
               "RelativeToolTip": "Module1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-<<<<<<< Updated upstream
               "WhenOpened": "2026-03-13T05:58:30.87Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.vb [Design]",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
-              "RelativeDocumentMoniker": "Login.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb [Design]",
-              "RelativeToolTip": "Login.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T05:40:19.014Z",
-              "EditorCaption": " [Design]"
-=======
-              "WhenOpened": "2026-03-13T05:58:30.87Z"
->>>>>>> Stashed changes
             }
           ]
         }

@@ -16,11 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Pesan Tiket Bioskop"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
-<<<<<<< Updated upstream
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efd43f6d573c9e96a97e02f8506515531172849c"),  _
-=======
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3431c2178d3bf1fbca7093bee7d8856cd99649b6"),  _
->>>>>>> Stashed changes
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ce019b5aa55ecc25abc8b2ade933b6495851ad1"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Pesan Tiket Bioskop"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Pesan Tiket Bioskop"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
