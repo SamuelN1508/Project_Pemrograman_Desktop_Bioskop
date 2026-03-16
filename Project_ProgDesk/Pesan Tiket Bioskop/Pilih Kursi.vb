@@ -3,6 +3,8 @@
 Public Class PilihKursi
 
     ' --- DATA DARI FORM SEBELUMNYA ---
+    <System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)>
+    Public Property SelectedJadwalID As String
     Public JudulFilmTerpilih As String = "Tim Tim"
     Public InfoJadwal As String = "Sindia, 11 12 Ster | 14:00"
     Public IdStudioTerpilih As String = "1"
