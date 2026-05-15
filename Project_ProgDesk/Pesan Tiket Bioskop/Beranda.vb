@@ -112,7 +112,11 @@ Public Class Beranda
         ' Logika klik tombol pesan
         AddHandler btnPesan.Click, Sub(sender As Object, e As EventArgs)
                                        Dim idFilm = DirectCast(sender, Button).Tag
+                                       Dim formStudio As New Pilih_Studio()
+                                       formStudio.SelectedFilmID = idFilm
                                        MessageBox.Show("Membuka jadwal untuk film ID: " & idFilm.ToString(), "Booking")
+                                       formStudio.Show()
+                                       Me.Hide()
                                    End Sub
 
         pnlCard.Controls.Add(lblDetail)

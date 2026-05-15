@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\beranda.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:beranda.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\beranda.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:beranda.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +26,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Beranda.vb",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.vb",
-              "RelativeDocumentMoniker": "Beranda.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.vb*",
-              "RelativeToolTip": "Beranda.vb*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAABjAAAAAAAAAA==",
+              "Title": "E-Ticket \u0026 Kode QR.vb",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb",
+              "RelativeDocumentMoniker": "E-Ticket \u0026 Kode QR.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb",
+              "RelativeToolTip": "E-Ticket \u0026 Kode QR.vb",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T08:16:27.696Z",
+              "WhenOpened": "2026-04-14T04:24:19.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Beranda.Designer.vb",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.Designer.vb",
-              "RelativeDocumentMoniker": "Beranda.Designer.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.Designer.vb",
-              "RelativeToolTip": "Beranda.Designer.vb",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwA8AAAAoAAAAAAAAAA==",
+              "Title": "Konfirmasi Pembayaran.vb",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb",
+              "RelativeDocumentMoniker": "Konfirmasi Pembayaran.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb",
+              "RelativeToolTip": "Konfirmasi Pembayaran.vb",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-03-13T08:16:17.797Z",
+              "WhenOpened": "2026-04-14T04:26:42.374Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Konfirmasi Pembayaran.vb [Design]",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb",
+              "RelativeDocumentMoniker": "Konfirmasi Pembayaran.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb [Design]",
+              "RelativeToolTip": "Konfirmasi Pembayaran.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T04:26:19.699Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "E-Ticket \u0026 Kode QR.vb [Design]",
+              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb",
+              "RelativeDocumentMoniker": "E-Ticket \u0026 Kode QR.vb",
+              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb [Design]",
+              "RelativeToolTip": "E-Ticket \u0026 Kode QR.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-04-14T04:23:55.659Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

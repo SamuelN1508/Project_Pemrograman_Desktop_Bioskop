@@ -1,10 +1,7 @@
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.vbproj.AssemblyReference.cache
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Beranda.resources
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.E_Ticket___Kode_QR.resources
-D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Konfirmasi_Pembayaran.resources
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Login.resources
-D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Pilih_Jadwal.resources
-D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Pilih_Kursi.resources
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Pilih_Studio.resources
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Register.resources
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.vbproj.GenerateResource.cache
@@ -36,3 +33,7 @@ D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Proj
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.pdb
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan Tiket Bioskop.genruntimeconfig.cache
 D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\ref\Pesan Tiket Bioskop.dll
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.Jadwal.resources
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.FormPembayaran.resources
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\obj\Debug\net10.0-windows\Pesan_Tiket_Bioskop.PilihKursi.resources
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\QRCoder.dll

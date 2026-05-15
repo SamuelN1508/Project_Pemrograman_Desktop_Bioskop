@@ -67,6 +67,10 @@ Public Class Login
     Private Sub LblEmail_Click(sender As Object, e As EventArgs) Handles LblEmail.Click
 
     End Sub
+
+    Private Sub TxtEmail_TextChanged(sender As Object, e As EventArgs) Handles TxtEmail.TextChanged
+
+    End Sub
     ' ... (Kode untuk BtnRegister_Click dan TxtPassword_KeyDown biarkan sama) ...
 
 End Class

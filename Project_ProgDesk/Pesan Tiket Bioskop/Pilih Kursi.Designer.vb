@@ -47,29 +47,32 @@ Partial Class PilihKursi
         ' LblTitle
         ' 
         LblTitle.AutoSize = True
-        LblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
-        LblTitle.Location = New Point(20, 15)
+        LblTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
+        LblTitle.Location = New Point(25, 19)
+        LblTitle.Margin = New Padding(4, 0, 4, 0)
         LblTitle.Name = "LblTitle"
-        LblTitle.Size = New Size(280, 37)
+        LblTitle.Size = New Size(313, 45)
         LblTitle.TabIndex = 0
         LblTitle.Text = "Halaman Pilih Kursi"
         ' 
         ' PnlLayar
         ' 
         PnlLayar.Controls.Add(LblLayar)
-        PnlLayar.Location = New Point(30, 70)
+        PnlLayar.Location = New Point(38, 88)
+        PnlLayar.Margin = New Padding(4, 4, 4, 4)
         PnlLayar.Name = "PnlLayar"
-        PnlLayar.Size = New Size(540, 30)
+        PnlLayar.Size = New Size(675, 38)
         PnlLayar.TabIndex = 1
         ' 
         ' LblLayar
         ' 
         LblLayar.AutoSize = True
-        LblLayar.BackColor = Color.FromArgb(240, 240, 240)
-        LblLayar.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        LblLayar.Location = New Point(245, 5)
+        LblLayar.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        LblLayar.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        LblLayar.Location = New Point(306, 6)
+        LblLayar.Margin = New Padding(4, 0, 4, 0)
         LblLayar.Name = "LblLayar"
-        LblLayar.Size = New Size(47, 20)
+        LblLayar.Size = New Size(58, 25)
         LblLayar.TabIndex = 0
         LblLayar.Text = "Layar"
         ' 
@@ -83,44 +86,49 @@ Partial Class PilihKursi
         PnlLegend.Controls.Add(BoxDipilih)
         PnlLegend.Controls.Add(BoxDipesan)
         PnlLegend.Controls.Add(BoxTersedia)
-        PnlLegend.Location = New Point(680, 110)
+        PnlLegend.Location = New Point(850, 138)
+        PnlLegend.Margin = New Padding(4, 4, 4, 4)
         PnlLegend.Name = "PnlLegend"
-        PnlLegend.Size = New Size(120, 140)
+        PnlLegend.Size = New Size(150, 175)
         PnlLegend.TabIndex = 2
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(35, 105)
+        Label5.Location = New Point(44, 131)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(69, 20)
+        Label5.Size = New Size(79, 25)
         Label5.TabIndex = 7
         Label5.Text = "Terblokir"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(35, 75)
+        Label6.Location = New Point(44, 94)
+        Label6.Margin = New Padding(4, 0, 4, 0)
         Label6.Name = "Label6"
-        Label6.Size = New Size(53, 20)
+        Label6.Size = New Size(62, 25)
         Label6.TabIndex = 6
         Label6.Text = "Dipilih"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(35, 45)
+        Label7.Location = New Point(44, 56)
+        Label7.Margin = New Padding(4, 0, 4, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(66, 20)
+        Label7.Size = New Size(76, 25)
         Label7.TabIndex = 5
         Label7.Text = "Dipesan"
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Location = New Point(35, 15)
+        Label8.Location = New Point(44, 19)
+        Label8.Margin = New Padding(4, 0, 4, 0)
         Label8.Name = "Label8"
-        Label8.Size = New Size(64, 20)
+        Label8.Size = New Size(75, 25)
         Label8.TabIndex = 4
         Label8.Text = "Tersedia"
         ' 
@@ -128,19 +136,21 @@ Partial Class PilihKursi
         ' 
         BoxTerblokir.BackColor = Color.Gray
         BoxTerblokir.BorderStyle = BorderStyle.FixedSingle
-        BoxTerblokir.Location = New Point(10, 105)
+        BoxTerblokir.Location = New Point(12, 131)
+        BoxTerblokir.Margin = New Padding(4, 4, 4, 4)
         BoxTerblokir.Name = "BoxTerblokir"
-        BoxTerblokir.Size = New Size(20, 20)
+        BoxTerblokir.Size = New Size(24, 24)
         BoxTerblokir.TabIndex = 3
         BoxTerblokir.TabStop = False
         ' 
         ' BoxDipilih
         ' 
-        BoxDipilih.BackColor = Color.FromArgb(46, 139, 135)
+        BoxDipilih.BackColor = Color.FromArgb(CByte(46), CByte(139), CByte(135))
         BoxDipilih.BorderStyle = BorderStyle.FixedSingle
-        BoxDipilih.Location = New Point(10, 75)
+        BoxDipilih.Location = New Point(12, 94)
+        BoxDipilih.Margin = New Padding(4, 4, 4, 4)
         BoxDipilih.Name = "BoxDipilih"
-        BoxDipilih.Size = New Size(20, 20)
+        BoxDipilih.Size = New Size(24, 24)
         BoxDipilih.TabIndex = 2
         BoxDipilih.TabStop = False
         ' 
@@ -148,9 +158,10 @@ Partial Class PilihKursi
         ' 
         BoxDipesan.BackColor = Color.IndianRed
         BoxDipesan.BorderStyle = BorderStyle.FixedSingle
-        BoxDipesan.Location = New Point(10, 45)
+        BoxDipesan.Location = New Point(12, 56)
+        BoxDipesan.Margin = New Padding(4, 4, 4, 4)
         BoxDipesan.Name = "BoxDipesan"
-        BoxDipesan.Size = New Size(20, 20)
+        BoxDipesan.Size = New Size(24, 24)
         BoxDipesan.TabIndex = 1
         BoxDipesan.TabStop = False
         ' 
@@ -158,26 +169,29 @@ Partial Class PilihKursi
         ' 
         BoxTersedia.BackColor = Color.White
         BoxTersedia.BorderStyle = BorderStyle.FixedSingle
-        BoxTersedia.Location = New Point(10, 15)
+        BoxTersedia.Location = New Point(12, 19)
+        BoxTersedia.Margin = New Padding(4, 4, 4, 4)
         BoxTersedia.Name = "BoxTersedia"
-        BoxTersedia.Size = New Size(20, 20)
+        BoxTersedia.Size = New Size(24, 24)
         BoxTersedia.TabIndex = 0
         BoxTersedia.TabStop = False
         ' 
         ' PnlKursi
         ' 
-        PnlKursi.Location = New Point(25, 110)
+        PnlKursi.Location = New Point(31, 138)
+        PnlKursi.Margin = New Padding(4, 4, 4, 4)
         PnlKursi.Name = "PnlKursi"
-        PnlKursi.Size = New Size(650, 320)
+        PnlKursi.Size = New Size(812, 400)
         PnlKursi.TabIndex = 3
         ' 
         ' LblKursiDipilih
         ' 
         LblKursiDipilih.AutoSize = True
-        LblKursiDipilih.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
-        LblKursiDipilih.Location = New Point(25, 460)
+        LblKursiDipilih.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        LblKursiDipilih.Location = New Point(31, 575)
+        LblKursiDipilih.Margin = New Padding(4, 0, 4, 0)
         LblKursiDipilih.Name = "LblKursiDipilih"
-        LblKursiDipilih.Size = New Size(171, 23)
+        LblKursiDipilih.Size = New Size(197, 28)
         LblKursiDipilih.TabIndex = 4
         LblKursiDipilih.Text = "Kursi yang dipilih: -"
         ' 
@@ -187,51 +201,55 @@ Partial Class PilihKursi
         PnlDetail.BorderStyle = BorderStyle.FixedSingle
         PnlDetail.Controls.Add(LblDetailInfo)
         PnlDetail.Controls.Add(LblDetailJudul)
-        PnlDetail.Location = New Point(525, 440)
+        PnlDetail.Location = New Point(656, 550)
+        PnlDetail.Margin = New Padding(4, 4, 4, 4)
         PnlDetail.Name = "PnlDetail"
-        PnlDetail.Size = New Size(300, 60)
+        PnlDetail.Size = New Size(374, 74)
         PnlDetail.TabIndex = 5
         ' 
         ' LblDetailInfo
         ' 
         LblDetailInfo.AutoSize = True
-        LblDetailInfo.Font = New Font("Segoe UI", 9.0F)
-        LblDetailInfo.Location = New Point(5, 30)
+        LblDetailInfo.Font = New Font("Segoe UI", 9F)
+        LblDetailInfo.Location = New Point(6, 38)
+        LblDetailInfo.Margin = New Padding(4, 0, 4, 0)
         LblDetailInfo.Name = "LblDetailInfo"
-        LblDetailInfo.Size = New Size(195, 20)
+        LblDetailInfo.Size = New Size(220, 25)
         LblDetailInfo.TabIndex = 1
         LblDetailInfo.Text = "Film Title | Studio 1 | 14:00"
         ' 
         ' LblDetailJudul
         ' 
         LblDetailJudul.AutoSize = True
-        LblDetailJudul.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        LblDetailJudul.Location = New Point(5, 5)
+        LblDetailJudul.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        LblDetailJudul.Location = New Point(6, 6)
+        LblDetailJudul.Margin = New Padding(4, 0, 4, 0)
         LblDetailJudul.Name = "LblDetailJudul"
-        LblDetailJudul.Size = New Size(140, 20)
+        LblDetailJudul.Size = New Size(172, 25)
         LblDetailJudul.TabIndex = 0
         LblDetailJudul.Text = "Detail Pembayaran"
         ' 
         ' BtnLanjut
         ' 
-        BtnLanjut.BackColor = Color.FromArgb(46, 139, 135)
+        BtnLanjut.BackColor = Color.FromArgb(CByte(46), CByte(139), CByte(135))
         BtnLanjut.FlatAppearance.BorderSize = 0
         BtnLanjut.FlatStyle = FlatStyle.Flat
-        BtnLanjut.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        BtnLanjut.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
         BtnLanjut.ForeColor = Color.White
-        BtnLanjut.Location = New Point(25, 520)
+        BtnLanjut.Location = New Point(31, 650)
+        BtnLanjut.Margin = New Padding(4, 4, 4, 4)
         BtnLanjut.Name = "BtnLanjut"
-        BtnLanjut.Size = New Size(800, 45)
+        BtnLanjut.Size = New Size(1000, 56)
         BtnLanjut.TabIndex = 6
         BtnLanjut.Text = "Lanjut ke Pembayaran"
         BtnLanjut.UseVisualStyleBackColor = False
         ' 
         ' PilihKursi
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(240, 240, 240)
-        ClientSize = New Size(850, 600)
+        BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
+        ClientSize = New Size(1062, 750)
         Controls.Add(BtnLanjut)
         Controls.Add(PnlDetail)
         Controls.Add(LblKursiDipilih)
@@ -239,6 +257,7 @@ Partial Class PilihKursi
         Controls.Add(PnlLegend)
         Controls.Add(PnlLayar)
         Controls.Add(LblTitle)
+        Margin = New Padding(4, 4, 4, 4)
         Name = "PilihKursi"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Pilih Kursi"

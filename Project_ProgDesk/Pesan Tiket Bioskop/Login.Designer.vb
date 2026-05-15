@@ -29,7 +29,7 @@ Partial Class Login
         ' LblTitle
         ' 
         LblTitle.AutoSize = True
-        LblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
+        LblTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
         LblTitle.Location = New Point(144, 38)
         LblTitle.Name = "LblTitle"
         LblTitle.Size = New Size(246, 45)

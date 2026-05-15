@@ -36,177 +36,177 @@ Partial Class E_Ticket___Kode_QR
     ' Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PanelLeft = New System.Windows.Forms.Panel()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.lblSubtitle = New System.Windows.Forms.Label()
-        Me.lblStatus = New System.Windows.Forms.Label()
-        Me.lblScanTop = New System.Windows.Forms.Label()
-        Me.picQR = New System.Windows.Forms.PictureBox()
-        Me.lblScanBottom = New System.Windows.Forms.Label()
-        Me.grpSummary = New System.Windows.Forms.GroupBox()
-        Me.lblDetails = New System.Windows.Forms.Label()
-        Me.picPoster = New System.Windows.Forms.PictureBox()
-        Me.btnSave = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        CType(Me.picQR, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.grpSummary.SuspendLayout()
-        CType(Me.picPoster, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        '
-        'PanelLeft
-        '
-        Me.PanelLeft.BackColor = System.Drawing.Color.LightGray
-        Me.PanelLeft.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelLeft.Location = New System.Drawing.Point(0, 0)
-        Me.PanelLeft.Name = "PanelLeft"
-        Me.PanelLeft.Size = New System.Drawing.Size(130, 420)
-        Me.PanelLeft.TabIndex = 0
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(150, 20)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(269, 25)
-        Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Halaman E-Ticket & Kode QR"
-        '
-        'lblSubtitle
-        '
-        Me.lblSubtitle.AutoSize = True
-        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSubtitle.Location = New System.Drawing.Point(150, 55)
-        Me.lblSubtitle.Name = "lblSubtitle"
-        Me.lblSubtitle.Size = New System.Drawing.Size(287, 21)
-        Me.lblSubtitle.TabIndex = 2
-        Me.lblSubtitle.Text = "Terima kasih atas Pemesanan Anda!"
-        '
-        'lblStatus
-        '
-        Me.lblStatus.AutoSize = True
-        Me.lblStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.Location = New System.Drawing.Point(151, 85)
-        Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(117, 15)
-        Me.lblStatus.TabIndex = 3
-        Me.lblStatus.Text = "Status Tiket: ISSUED"
-        '
-        'lblScanTop
-        '
-        Me.lblScanTop.AutoSize = True
-        Me.lblScanTop.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScanTop.Location = New System.Drawing.Point(151, 105)
-        Me.lblScanTop.Name = "lblScanTop"
-        Me.lblScanTop.Size = New System.Drawing.Size(120, 15)
-        Me.lblScanTop.TabIndex = 4
-        Me.lblScanTop.Text = "Pindai Kode QR Anda"
-        '
-        'picQR
-        '
-        Me.picQR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.picQR.Location = New System.Drawing.Point(180, 135)
-        Me.picQR.Name = "picQR"
-        Me.picQR.Size = New System.Drawing.Size(180, 180)
-        Me.picQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picQR.TabIndex = 5
-        Me.picQR.TabStop = False
-        '
-        'lblScanBottom
-        '
-        Me.lblScanBottom.AutoSize = True
-        Me.lblScanBottom.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScanBottom.Location = New System.Drawing.Point(210, 325)
-        Me.lblScanBottom.Name = "lblScanBottom"
-        Me.lblScanBottom.Size = New System.Drawing.Size(126, 15)
-        Me.lblScanBottom.TabIndex = 6
-        Me.lblScanBottom.Text = "Pindai Kode QR Anda"
-        '
-        'grpSummary
-        '
-        Me.grpSummary.BackColor = System.Drawing.Color.LightGray
-        Me.grpSummary.Controls.Add(Me.lblDetails)
-        Me.grpSummary.Controls.Add(Me.picPoster)
-        Me.grpSummary.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.grpSummary.Location = New System.Drawing.Point(400, 135)
-        Me.grpSummary.Name = "grpSummary"
-        Me.grpSummary.Size = New System.Drawing.Size(230, 120)
-        Me.grpSummary.TabIndex = 7
-        Me.grpSummary.TabStop = False
-        Me.grpSummary.Text = "Tiket Summary"
-        '
-        'lblDetails
-        '
-        Me.lblDetails.AutoSize = True
-        Me.lblDetails.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDetails.Location = New System.Drawing.Point(85, 25)
-        Me.lblDetails.Name = "lblDetails"
-        Me.lblDetails.Size = New System.Drawing.Size(89, 65)
-        Me.lblDetails.TabIndex = 1
-        Me.lblDetails.Text = "The Film" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "01 Okt 11:30" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Studio 1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Kursi F12, F13"
-        '
-        'picPoster
-        '
-        Me.picPoster.BackColor = System.Drawing.Color.DarkGray
-        Me.picPoster.Location = New System.Drawing.Point(15, 25)
-        Me.picPoster.Name = "picPoster"
-        Me.picPoster.Size = New System.Drawing.Size(60, 80)
-        Me.picPoster.TabIndex = 0
-        Me.picPoster.TabStop = False
-        '
-        'btnSave
-        '
-        Me.btnSave.BackColor = System.Drawing.Color.CadetBlue
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSave.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Location = New System.Drawing.Point(400, 270)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(230, 35)
-        Me.btnSave.TabIndex = 8
-        Me.btnSave.Text = "Simpan ke Memori Perangkat"
-        Me.btnSave.UseVisualStyleBackColor = False
-        '
-        'btnCancel
-        '
-        Me.btnCancel.BackColor = System.Drawing.Color.Gray
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(400, 315)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(230, 35)
-        Me.btnCancel.TabIndex = 9
-        Me.btnCancel.Text = "Keluar"
-        Me.btnCancel.UseVisualStyleBackColor = False
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(660, 420)
-        Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.grpSummary)
-        Me.Controls.Add(Me.lblScanBottom)
-        Me.Controls.Add(Me.picQR)
-        Me.Controls.Add(Me.lblScanTop)
-        Me.Controls.Add(Me.lblStatus)
-        Me.Controls.Add(Me.lblSubtitle)
-        Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.PanelLeft)
-        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Name = "E-Ticket & Kode QR"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Halaman E-Ticket & Kode QR"
-        CType(Me.picQR, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.grpSummary.ResumeLayout(False)
-        Me.grpSummary.PerformLayout()
-        CType(Me.picPoster, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        PanelLeft = New Panel()
+        lblTitle = New Label()
+        lblSubtitle = New Label()
+        lblStatus = New Label()
+        lblScanTop = New Label()
+        picQR = New PictureBox()
+        lblScanBottom = New Label()
+        grpSummary = New GroupBox()
+        lblDetails = New Label()
+        picPoster = New PictureBox()
+        btnSave = New Button()
+        btnCancel = New Button()
+        CType(picQR, ComponentModel.ISupportInitialize).BeginInit()
+        grpSummary.SuspendLayout()
+        CType(picPoster, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' PanelLeft
+        ' 
+        PanelLeft.BackColor = Color.LightGray
+        PanelLeft.Dock = DockStyle.Left
+        PanelLeft.Location = New Point(0, 0)
+        PanelLeft.Name = "PanelLeft"
+        PanelLeft.Size = New Size(130, 420)
+        PanelLeft.TabIndex = 0
+        ' 
+        ' lblTitle
+        ' 
+        lblTitle.AutoSize = True
+        lblTitle.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTitle.Location = New Point(150, 20)
+        lblTitle.Name = "lblTitle"
+        lblTitle.Size = New Size(377, 38)
+        lblTitle.TabIndex = 1
+        lblTitle.Text = "Halaman E-Ticket & Kode QR"
+        ' 
+        ' lblSubtitle
+        ' 
+        lblSubtitle.AutoSize = True
+        lblSubtitle.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblSubtitle.Location = New Point(150, 55)
+        lblSubtitle.Name = "lblSubtitle"
+        lblSubtitle.Size = New Size(420, 32)
+        lblSubtitle.TabIndex = 2
+        lblSubtitle.Text = "Terima kasih atas Pemesanan Anda!"
+        ' 
+        ' lblStatus
+        ' 
+        lblStatus.AutoSize = True
+        lblStatus.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblStatus.Location = New Point(151, 85)
+        lblStatus.Name = "lblStatus"
+        lblStatus.Size = New Size(170, 25)
+        lblStatus.TabIndex = 3
+        lblStatus.Text = "Status Tiket: ISSUED"
+        ' 
+        ' lblScanTop
+        ' 
+        lblScanTop.AutoSize = True
+        lblScanTop.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblScanTop.Location = New Point(151, 105)
+        lblScanTop.Name = "lblScanTop"
+        lblScanTop.Size = New Size(183, 25)
+        lblScanTop.TabIndex = 4
+        lblScanTop.Text = "Pindai Kode QR Anda"
+        ' 
+        ' picQR
+        ' 
+        picQR.BorderStyle = BorderStyle.FixedSingle
+        picQR.Location = New Point(180, 135)
+        picQR.Name = "picQR"
+        picQR.Size = New Size(180, 180)
+        picQR.SizeMode = PictureBoxSizeMode.Zoom
+        picQR.TabIndex = 5
+        picQR.TabStop = False
+        ' 
+        ' lblScanBottom
+        ' 
+        lblScanBottom.AutoSize = True
+        lblScanBottom.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblScanBottom.Location = New Point(210, 325)
+        lblScanBottom.Name = "lblScanBottom"
+        lblScanBottom.Size = New Size(195, 25)
+        lblScanBottom.TabIndex = 6
+        lblScanBottom.Text = "Pindai Kode QR Anda"
+        ' 
+        ' grpSummary
+        ' 
+        grpSummary.BackColor = Color.LightGray
+        grpSummary.Controls.Add(lblDetails)
+        grpSummary.Controls.Add(picPoster)
+        grpSummary.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        grpSummary.Location = New Point(400, 135)
+        grpSummary.Name = "grpSummary"
+        grpSummary.Size = New Size(230, 120)
+        grpSummary.TabIndex = 7
+        grpSummary.TabStop = False
+        grpSummary.Text = "Tiket Summary"
+        ' 
+        ' lblDetails
+        ' 
+        lblDetails.AutoSize = True
+        lblDetails.Font = New Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblDetails.Location = New Point(85, 25)
+        lblDetails.Name = "lblDetails"
+        lblDetails.Size = New Size(113, 92)
+        lblDetails.TabIndex = 1
+        lblDetails.Text = "The Film" & vbCrLf & "01 Okt 11:30" & vbCrLf & "Studio 1" & vbCrLf & "Kursi F12, F13"
+        ' 
+        ' picPoster
+        ' 
+        picPoster.BackColor = Color.DarkGray
+        picPoster.Location = New Point(15, 25)
+        picPoster.Name = "picPoster"
+        picPoster.Size = New Size(60, 80)
+        picPoster.TabIndex = 0
+        picPoster.TabStop = False
+        ' 
+        ' btnSave
+        ' 
+        btnSave.BackColor = Color.CadetBlue
+        btnSave.FlatStyle = FlatStyle.Flat
+        btnSave.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSave.ForeColor = Color.White
+        btnSave.Location = New Point(400, 270)
+        btnSave.Name = "btnSave"
+        btnSave.Size = New Size(230, 35)
+        btnSave.TabIndex = 8
+        btnSave.Text = "Simpan ke Memori Perangkat"
+        btnSave.UseVisualStyleBackColor = False
+        ' 
+        ' btnCancel
+        ' 
+        btnCancel.BackColor = Color.Gray
+        btnCancel.FlatStyle = FlatStyle.Flat
+        btnCancel.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCancel.ForeColor = Color.White
+        btnCancel.Location = New Point(400, 315)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(230, 35)
+        btnCancel.TabIndex = 9
+        btnCancel.Text = "Keluar"
+        btnCancel.UseVisualStyleBackColor = False
+        ' 
+        ' E_Ticket___Kode_QR
+        ' 
+        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.WhiteSmoke
+        ClientSize = New Size(660, 420)
+        Controls.Add(btnCancel)
+        Controls.Add(btnSave)
+        Controls.Add(grpSummary)
+        Controls.Add(lblScanBottom)
+        Controls.Add(picQR)
+        Controls.Add(lblScanTop)
+        Controls.Add(lblStatus)
+        Controls.Add(lblSubtitle)
+        Controls.Add(lblTitle)
+        Controls.Add(PanelLeft)
+        Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        Name = "E_Ticket___Kode_QR"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Halaman E-Ticket & Kode QR"
+        CType(picQR, ComponentModel.ISupportInitialize).EndInit()
+        grpSummary.ResumeLayout(False)
+        grpSummary.PerformLayout()
+        CType(picPoster, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 End Class

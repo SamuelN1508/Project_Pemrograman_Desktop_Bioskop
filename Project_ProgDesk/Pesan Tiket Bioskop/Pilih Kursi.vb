@@ -161,7 +161,10 @@ Public Class PilihKursi
         End If
 
         MessageBox.Show("Lanjut ke pembayaran. Kursi: " & String.Join(", ", ListKursiDipilih), "Sukses")
-        ' FormPembayaran.Show()
+        FormPembayaran.Show()
     End Sub
 
+    Private Sub PnlKursi_Paint(sender As Object, e As PaintEventArgs) Handles PnlKursi.Paint
+
+    End Sub
 End Class
