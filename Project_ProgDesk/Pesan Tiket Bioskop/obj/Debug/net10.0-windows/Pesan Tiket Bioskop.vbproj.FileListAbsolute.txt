@@ -124,3 +124,13 @@ D:\semester 6\PROGDESK\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\inte
 D:\semester 6\PROGDESK\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\quietplace.jpg
 D:\semester 6\PROGDESK\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\thebatman.jpg
 D:\semester 6\PROGDESK\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\thejoker.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\avatar.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\endgame.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\insideout2.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\interstellar.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\nowayhome.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\parasite.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\quietplace.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\the conjuring3.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\thebatman.jpg
+D:\Ngampus\Semester 6\ProgDesk\Projects\Project_Pemrograman_Desktop_Bioskop\Project_ProgDesk\Pesan Tiket Bioskop\bin\Debug\net10.0-windows\Images\thejoker.jpg

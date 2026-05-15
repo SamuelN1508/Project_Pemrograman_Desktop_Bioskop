@@ -23,6 +23,7 @@ Partial Class Pilih_Studio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PanelKiri = New System.Windows.Forms.Panel()
+        Me.BtnBack = New System.Windows.Forms.Button()
         Me.LblSinopsisText = New System.Windows.Forms.Label()
         Me.LblSinopsisTitle = New System.Windows.Forms.Label()
         Me.LblDurasi = New System.Windows.Forms.Label()
@@ -70,6 +71,7 @@ Partial Class Pilih_Studio
         'PanelKiri
         '
         Me.PanelKiri.BackColor = System.Drawing.Color.LightGray
+        Me.PanelKiri.Controls.Add(Me.BtnBack)
         Me.PanelKiri.Controls.Add(Me.LblSinopsisText)
         Me.PanelKiri.Controls.Add(Me.LblSinopsisTitle)
         Me.PanelKiri.Controls.Add(Me.LblDurasi)
@@ -81,11 +83,26 @@ Partial Class Pilih_Studio
         Me.PanelKiri.Size = New System.Drawing.Size(220, 500)
         Me.PanelKiri.TabIndex = 0
         '
+        'BtnBack
+        '
+        Me.BtnBack.BackColor = System.Drawing.Color.DimGray
+        Me.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnBack.FlatAppearance.BorderSize = 0
+        Me.BtnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnBack.ForeColor = System.Drawing.Color.White
+        Me.BtnBack.Location = New System.Drawing.Point(12, 450)
+        Me.BtnBack.Name = "BtnBack"
+        Me.BtnBack.Size = New System.Drawing.Size(90, 30)
+        Me.BtnBack.TabIndex = 5
+        Me.BtnBack.Text = "< Kembali"
+        Me.BtnBack.UseVisualStyleBackColor = False
+        '
         'LblSinopsisText
         '
         Me.LblSinopsisText.Location = New System.Drawing.Point(12, 170)
         Me.LblSinopsisText.Name = "LblSinopsisText"
-        Me.LblSinopsisText.Size = New System.Drawing.Size(190, 300)
+        Me.LblSinopsisText.Size = New System.Drawing.Size(190, 270)
         Me.LblSinopsisText.TabIndex = 4
         Me.LblSinopsisText.Text = "Film ini menceritakan tentang petualangan epik penuh aksi yang sangat menegangkan" &
     " dengan berbagai rintangan untuk mencapai tujuan utama..."
@@ -511,5 +528,6 @@ Partial Class Pilih_Studio
     Friend WithEvents BtnPilih6 As System.Windows.Forms.Button
     Friend WithEvents LblDesc6 As System.Windows.Forms.Label
     Friend WithEvents LblNamaStudio6 As System.Windows.Forms.Label
+    Friend WithEvents BtnBack As System.Windows.Forms.Button
 
 End Class

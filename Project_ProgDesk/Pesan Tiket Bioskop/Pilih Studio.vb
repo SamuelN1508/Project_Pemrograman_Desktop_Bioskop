@@ -58,7 +58,6 @@ Public Class Pilih_Studio
     End Sub
 
     ' --- FUNGSI UNTUK MENGAMBIL JADWAL & STUDIO (PANEL KANAN) ---
-    ' --- FUNGSI UNTUK MENGAMBIL JADWAL & STUDIO (PANEL KANAN) ---
     Private Sub LoadJadwalStudio()
         FlowLayoutStudios.Controls.Clear()
 
@@ -164,11 +163,17 @@ Public Class Pilih_Studio
         Transisi_ID_Jadwal = dataTag(0)
         Transisi_Harga_Tiket = Convert.ToDecimal(dataTag(1))
 
-        ' 2. Buka halaman Pilih_Kursi (Pastikan namamu Pilih_Kursi)
+        ' 2. Buka halaman Pilih_Kursi (Pastikan namamu PilihKursi)
         Dim formKursi As New PilihKursi()
         formKursi.Show()
 
         ' 3. Tutup halaman Pilih Studio saat ini agar tidak menumpuk
+        Me.Close()
+    End Sub
+
+    ' --- EVENT TOMBOL BACK ---
+    Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
+        Beranda.Show()
         Me.Close()
     End Sub
 

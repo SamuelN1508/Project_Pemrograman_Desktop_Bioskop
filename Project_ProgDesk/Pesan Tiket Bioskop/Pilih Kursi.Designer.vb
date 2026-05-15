@@ -35,6 +35,7 @@ Partial Class PilihKursi
         LblDetailInfo = New Label()
         LblDetailJudul = New Label()
         BtnLanjut = New Button()
+        BtnBack = New Button()
         PnlLayar.SuspendLayout()
         PnlLegend.SuspendLayout()
         CType(BoxTerblokir, ComponentModel.ISupportInitialize).BeginInit()
@@ -47,7 +48,7 @@ Partial Class PilihKursi
         ' LblTitle
         ' 
         LblTitle.AutoSize = True
-        LblTitle.Font = New Font("Segoe UI", 16F, FontStyle.Bold)
+        LblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
         LblTitle.Location = New Point(25, 19)
         LblTitle.Margin = New Padding(4, 0, 4, 0)
         LblTitle.Name = "LblTitle"
@@ -68,7 +69,7 @@ Partial Class PilihKursi
         ' 
         LblLayar.AutoSize = True
         LblLayar.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        LblLayar.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        LblLayar.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
         LblLayar.Location = New Point(306, 6)
         LblLayar.Margin = New Padding(4, 0, 4, 0)
         LblLayar.Name = "LblLayar"
@@ -187,7 +188,7 @@ Partial Class PilihKursi
         ' LblKursiDipilih
         ' 
         LblKursiDipilih.AutoSize = True
-        LblKursiDipilih.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        LblKursiDipilih.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         LblKursiDipilih.Location = New Point(31, 575)
         LblKursiDipilih.Margin = New Padding(4, 0, 4, 0)
         LblKursiDipilih.Name = "LblKursiDipilih"
@@ -210,7 +211,7 @@ Partial Class PilihKursi
         ' LblDetailInfo
         ' 
         LblDetailInfo.AutoSize = True
-        LblDetailInfo.Font = New Font("Segoe UI", 9F)
+        LblDetailInfo.Font = New Font("Segoe UI", 9.0F)
         LblDetailInfo.Location = New Point(6, 38)
         LblDetailInfo.Margin = New Padding(4, 0, 4, 0)
         LblDetailInfo.Name = "LblDetailInfo"
@@ -221,7 +222,7 @@ Partial Class PilihKursi
         ' LblDetailJudul
         ' 
         LblDetailJudul.AutoSize = True
-        LblDetailJudul.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        LblDetailJudul.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
         LblDetailJudul.Location = New Point(6, 6)
         LblDetailJudul.Margin = New Padding(4, 0, 4, 0)
         LblDetailJudul.Name = "LblDetailJudul"
@@ -234,7 +235,7 @@ Partial Class PilihKursi
         BtnLanjut.BackColor = Color.FromArgb(CByte(46), CByte(139), CByte(135))
         BtnLanjut.FlatAppearance.BorderSize = 0
         BtnLanjut.FlatStyle = FlatStyle.Flat
-        BtnLanjut.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
+        BtnLanjut.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
         BtnLanjut.ForeColor = Color.White
         BtnLanjut.Location = New Point(31, 650)
         BtnLanjut.Margin = New Padding(4, 4, 4, 4)
@@ -244,12 +245,28 @@ Partial Class PilihKursi
         BtnLanjut.Text = "Lanjut ke Pembayaran"
         BtnLanjut.UseVisualStyleBackColor = False
         ' 
+        ' BtnBack
+        ' 
+        BtnBack.BackColor = Color.DimGray
+        BtnBack.Cursor = Cursors.Hand
+        BtnBack.FlatAppearance.BorderSize = 0
+        BtnBack.FlatStyle = FlatStyle.Flat
+        BtnBack.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        BtnBack.ForeColor = Color.White
+        BtnBack.Location = New Point(920, 25)
+        BtnBack.Name = "BtnBack"
+        BtnBack.Size = New Size(110, 35)
+        BtnBack.TabIndex = 7
+        BtnBack.Text = "< Kembali"
+        BtnBack.UseVisualStyleBackColor = False
+        ' 
         ' PilihKursi
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
         ClientSize = New Size(1062, 750)
+        Controls.Add(BtnBack)
         Controls.Add(BtnLanjut)
         Controls.Add(PnlDetail)
         Controls.Add(LblKursiDipilih)
@@ -293,4 +310,5 @@ Partial Class PilihKursi
     Friend WithEvents LblDetailInfo As Label
     Friend WithEvents LblDetailJudul As Label
     Friend WithEvents BtnLanjut As Button
+    Friend WithEvents BtnBack As Button
 End Class

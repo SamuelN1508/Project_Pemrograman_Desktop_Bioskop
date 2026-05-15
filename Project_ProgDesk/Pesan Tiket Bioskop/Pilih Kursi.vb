@@ -161,10 +161,19 @@ Public Class PilihKursi
         End If
 
         MessageBox.Show("Lanjut ke pembayaran. Kursi: " & String.Join(", ", ListKursiDipilih), "Sukses")
-        FormPembayaran.Show()
+        FormPembayaran.Show() ' Uncomment ini jika form pembayaran sudah ada
     End Sub
 
     Private Sub PnlKursi_Paint(sender As Object, e As PaintEventArgs) Handles PnlKursi.Paint
 
     End Sub
+
+    ' --- EVENT TOMBOL BACK ---
+    Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
+        ' Membuka kembali halaman Pilih Studio
+        Pilih_Studio.Show()
+        ' Menutup halaman Pilih Kursi saat ini
+        Me.Close()
+    End Sub
+
 End Class
