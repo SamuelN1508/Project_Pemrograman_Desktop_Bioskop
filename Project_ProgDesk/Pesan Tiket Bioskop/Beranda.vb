@@ -139,13 +139,15 @@ Public Class Beranda
         btnPesan.Tag = id ' Menyimpan ID_Film
 
         ' =========================================================================
-        ' PERUBAHAN DI SINI: Logika klik tombol pesan untuk berpindah ke Pilih_Studio
+        ' PERUBAHAN DI SINI: Menyimpan Judul dan Poster ke Global sebelum pindah
         ' =========================================================================
         AddHandler btnPesan.Click, Sub(sender As Object, e As EventArgs)
                                        Dim idFilm = DirectCast(sender, Button).Tag.ToString()
 
-                                       ' 1. Simpan ID Film ke variabel global dari Module1
+                                       ' 1. Simpan Data Film ke variabel global
                                        Transisi_ID_Film = idFilm
+                                       Transisi_Judul_Film = judul ' Mengambil dari parameter Sub BuatCardFilm
+                                       Transisi_Poster_Film = picPoster.Image ' Mengambil dari gambar yang sedang tampil
 
                                        ' 2. Buka halaman Pilih Studio
                                        Dim formStudio As New Pilih_Studio()
@@ -187,5 +189,4 @@ Public Class Beranda
     Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
         MessageBox.Show("Halaman Profil sedang dalam pengembangan.", "Informasi")
     End Sub
-
 End Class

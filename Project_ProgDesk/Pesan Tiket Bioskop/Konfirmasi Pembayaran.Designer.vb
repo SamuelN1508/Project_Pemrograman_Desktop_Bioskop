@@ -2,9 +2,8 @@
 Partial Class FormPembayaran
     Inherits System.Windows.Forms.Form
 
-    ' Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
-    Protected Overrides Sub Dispose(disposing As Boolean)
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
                 components.Dispose()
@@ -14,208 +13,418 @@ Partial Class FormPembayaran
         End Try
     End Sub
 
-    ' Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
-
-    ' Deklarasi Komponen UI
-    Friend WithEvents PanelLeft As System.Windows.Forms.Panel
-    Friend WithEvents lblTitle As System.Windows.Forms.Label
-    Friend WithEvents lblRingkasanTitle As System.Windows.Forms.Label
-    Friend WithEvents picPoster As System.Windows.Forms.PictureBox
-    Friend WithEvents lblMovieDetails As System.Windows.Forms.Label
-    Friend WithEvents lblDetailHargaTitle As System.Windows.Forms.Label
-    Friend WithEvents lblHargaValues As System.Windows.Forms.Label
-    Friend WithEvents lblMetodeTitle As System.Windows.Forms.Label
-    Friend WithEvents rbTransfer As System.Windows.Forms.RadioButton
-    Friend WithEvents rbOvo As System.Windows.Forms.RadioButton
-    Friend WithEvents rbKredit As System.Windows.Forms.RadioButton
-    Friend WithEvents btnLanjut As System.Windows.Forms.Button
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        PanelLeft = New Panel()
-        lblTitle = New Label()
-        lblRingkasanTitle = New Label()
-        picPoster = New PictureBox()
-        lblMovieDetails = New Label()
-        lblDetailHargaTitle = New Label()
-        lblHargaValues = New Label()
-        lblMetodeTitle = New Label()
-        rbTransfer = New RadioButton()
-        rbOvo = New RadioButton()
-        rbKredit = New RadioButton()
-        btnLanjut = New Button()
-        Label1 = New Label()
-        CType(picPoster, ComponentModel.ISupportInitialize).BeginInit()
+        components = New ComponentModel.Container()
+        PanelHeaderTimer = New Panel()
+        LblWaktuTimer = New Label()
+        LblSubPesanTimer = New Label()
+        LblPesanTimer = New Label()
+        LblTitleHalaman = New Label()
+        PanelDetailKanan = New Panel()
+        BtnLanjutBayar = New Button()
+        PanelMetode = New Panel()
+        RbKredit = New RadioButton()
+        RbOvo = New RadioButton()
+        RbTransfer = New RadioButton()
+        LblTitleMetode = New Label()
+        PanelGarisMetode = New Panel()
+        LblNilaiTotal = New Label()
+        LblTitleTotal = New Label()
+        LblNilaiSubtotal = New Label()
+        LblTitleSubtotal = New Label()
+        PanelGarisBawah = New Panel()
+        LblNilaiHargaTiket = New Label()
+        LblInfoTiket = New Label()
+        PanelGarisAtas = New Panel()
+        LblWaktu = New Label()
+        LblStudio = New Label()
+        LblJudul = New Label()
+        PicPoster = New PictureBox()
+        LblTitleDetail = New Label()
+        TimerPembayaran = New Timer(components)
+        BtnKembali = New Button()
+        PanelHeaderTimer.SuspendLayout()
+        PanelDetailKanan.SuspendLayout()
+        PanelMetode.SuspendLayout()
+        CType(PicPoster, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' PanelLeft
+        ' PanelHeaderTimer
         ' 
-        PanelLeft.BackColor = Color.LightGray
-        PanelLeft.Dock = DockStyle.Left
-        PanelLeft.Location = New Point(0, 0)
-        PanelLeft.Name = "PanelLeft"
-        PanelLeft.Size = New Size(177, 583)
-        PanelLeft.TabIndex = 0
+        PanelHeaderTimer.BackColor = Color.FloralWhite
+        PanelHeaderTimer.Controls.Add(LblWaktuTimer)
+        PanelHeaderTimer.Controls.Add(LblSubPesanTimer)
+        PanelHeaderTimer.Controls.Add(LblPesanTimer)
+        PanelHeaderTimer.Dock = DockStyle.Top
+        PanelHeaderTimer.Location = New Point(0, 0)
+        PanelHeaderTimer.Margin = New Padding(3, 4, 3, 4)
+        PanelHeaderTimer.Name = "PanelHeaderTimer"
+        PanelHeaderTimer.Size = New Size(571, 93)
+        PanelHeaderTimer.TabIndex = 0
         ' 
-        ' lblTitle
+        ' LblWaktuTimer
         ' 
-        lblTitle.AutoSize = True
-        lblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblTitle.Location = New Point(198, 18)
-        lblTitle.Name = "lblTitle"
-        lblTitle.Size = New Size(695, 59)
-        lblTitle.TabIndex = 1
-        lblTitle.Text = "Halaman Konfirmasi Pembayaran"
+        LblWaktuTimer.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        LblWaktuTimer.AutoSize = True
+        LblWaktuTimer.BackColor = Color.Moccasin
+        LblWaktuTimer.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        LblWaktuTimer.ForeColor = Color.SaddleBrown
+        LblWaktuTimer.Location = New Point(457, 27)
+        LblWaktuTimer.Name = "LblWaktuTimer"
+        LblWaktuTimer.Padding = New Padding(6, 7, 6, 7)
+        LblWaktuTimer.Size = New Size(77, 42)
+        LblWaktuTimer.TabIndex = 2
+        LblWaktuTimer.Text = "10:00"
         ' 
-        ' lblRingkasanTitle
+        ' LblSubPesanTimer
         ' 
-        lblRingkasanTitle.AutoSize = True
-        lblRingkasanTitle.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblRingkasanTitle.Location = New Point(198, 77)
-        lblRingkasanTitle.Name = "lblRingkasanTitle"
-        lblRingkasanTitle.Size = New Size(286, 41)
-        lblRingkasanTitle.TabIndex = 2
-        lblRingkasanTitle.Text = "Ringkasan Pesanan"
+        LblSubPesanTimer.AutoSize = True
+        LblSubPesanTimer.Font = New Font("Segoe UI", 9.0F)
+        LblSubPesanTimer.ForeColor = Color.DimGray
+        LblSubPesanTimer.Location = New Point(23, 51)
+        LblSubPesanTimer.Name = "LblSubPesanTimer"
+        LblSubPesanTimer.Size = New Size(420, 20)
+        LblSubPesanTimer.TabIndex = 1
+        LblSubPesanTimer.Text = "Yuk, lakukan pembayaran agar pesanan kamu segera diproses."
         ' 
-        ' picPoster
+        ' LblPesanTimer
         ' 
-        picPoster.BackColor = Color.DarkSlateGray
-        picPoster.Location = New Point(198, 123)
-        picPoster.Name = "picPoster"
-        picPoster.Size = New Size(138, 194)
-        picPoster.TabIndex = 3
-        picPoster.TabStop = False
+        LblPesanTimer.AutoSize = True
+        LblPesanTimer.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        LblPesanTimer.ForeColor = Color.DarkGoldenrod
+        LblPesanTimer.Location = New Point(21, 20)
+        LblPesanTimer.Name = "LblPesanTimer"
+        LblPesanTimer.Size = New Size(279, 25)
+        LblPesanTimer.TabIndex = 0
+        LblPesanTimer.Text = "Selesaikan pembayaran dalam"
         ' 
-        ' lblMovieDetails
+        ' LblTitleHalaman
         ' 
-        lblMovieDetails.AutoSize = True
-        lblMovieDetails.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblMovieDetails.Location = New Point(342, 118)
-        lblMovieDetails.Name = "lblMovieDetails"
-        lblMovieDetails.Size = New Size(387, 128)
-        lblMovieDetails.TabIndex = 4
-        lblMovieDetails.Text = "Film: The Film" & vbCrLf & "Studio: Studio 1 (Normal)" & vbCrLf & "Jadwal: Selasa, 12 Nov 2024 | 14:00" & vbCrLf & "Kursi: F12, F13"
+        LblTitleHalaman.AutoSize = True
+        LblTitleHalaman.Font = New Font("Segoe UI", 14.0F, FontStyle.Bold)
+        LblTitleHalaman.Location = New Point(57, 127)
+        LblTitleHalaman.Name = "LblTitleHalaman"
+        LblTitleHalaman.Size = New Size(241, 32)
+        LblTitleHalaman.TabIndex = 1
+        LblTitleHalaman.Text = "Konfirmasi pesanan"
         ' 
-        ' lblDetailHargaTitle
+        ' PanelDetailKanan
         ' 
-        lblDetailHargaTitle.AutoSize = True
-        lblDetailHargaTitle.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblDetailHargaTitle.Location = New Point(705, 267)
-        lblDetailHargaTitle.Name = "lblDetailHargaTitle"
-        lblDetailHargaTitle.Size = New Size(196, 41)
-        lblDetailHargaTitle.TabIndex = 5
-        lblDetailHargaTitle.Text = "Detail Harga"
+        PanelDetailKanan.BackColor = Color.White
+        PanelDetailKanan.BorderStyle = BorderStyle.FixedSingle
+        PanelDetailKanan.Controls.Add(BtnLanjutBayar)
+        PanelDetailKanan.Controls.Add(PanelMetode)
+        PanelDetailKanan.Controls.Add(LblTitleMetode)
+        PanelDetailKanan.Controls.Add(PanelGarisMetode)
+        PanelDetailKanan.Controls.Add(LblNilaiTotal)
+        PanelDetailKanan.Controls.Add(LblTitleTotal)
+        PanelDetailKanan.Controls.Add(LblNilaiSubtotal)
+        PanelDetailKanan.Controls.Add(LblTitleSubtotal)
+        PanelDetailKanan.Controls.Add(PanelGarisBawah)
+        PanelDetailKanan.Controls.Add(LblNilaiHargaTiket)
+        PanelDetailKanan.Controls.Add(LblInfoTiket)
+        PanelDetailKanan.Controls.Add(PanelGarisAtas)
+        PanelDetailKanan.Controls.Add(LblWaktu)
+        PanelDetailKanan.Controls.Add(LblStudio)
+        PanelDetailKanan.Controls.Add(LblJudul)
+        PanelDetailKanan.Controls.Add(PicPoster)
+        PanelDetailKanan.Location = New Point(57, 213)
+        PanelDetailKanan.Margin = New Padding(3, 4, 3, 4)
+        PanelDetailKanan.Name = "PanelDetailKanan"
+        PanelDetailKanan.Size = New Size(457, 633)
+        PanelDetailKanan.TabIndex = 2
         ' 
-        ' lblHargaValues
+        ' BtnLanjutBayar
         ' 
-        lblHargaValues.AutoSize = True
-        lblHargaValues.Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblHargaValues.Location = New Point(705, 308)
-        lblHargaValues.Name = "lblHargaValues"
-        lblHargaValues.Size = New Size(319, 96)
-        lblHargaValues.TabIndex = 6
-        lblHargaValues.Text = "Harga:                 Rp 120.000" & vbCrLf & "Pajak:                  Rp  15.000" & vbCrLf & "Total Harga:        Rp 135.000"
+        BtnLanjutBayar.BackColor = Color.DimGray
+        BtnLanjutBayar.Cursor = Cursors.Hand
+        BtnLanjutBayar.FlatAppearance.BorderSize = 0
+        BtnLanjutBayar.FlatStyle = FlatStyle.Flat
+        BtnLanjutBayar.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        BtnLanjutBayar.ForeColor = Color.White
+        BtnLanjutBayar.Location = New Point(23, 533)
+        BtnLanjutBayar.Margin = New Padding(3, 4, 3, 4)
+        BtnLanjutBayar.Name = "BtnLanjutBayar"
+        BtnLanjutBayar.Size = New Size(411, 67)
+        BtnLanjutBayar.TabIndex = 16
+        BtnLanjutBayar.Text = "Bayar Rp0"
+        BtnLanjutBayar.UseVisualStyleBackColor = False
         ' 
-        ' lblMetodeTitle
+        ' PanelMetode
         ' 
-        lblMetodeTitle.AutoSize = True
-        lblMetodeTitle.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblMetodeTitle.Location = New Point(198, 386)
-        lblMetodeTitle.Name = "lblMetodeTitle"
-        lblMetodeTitle.Size = New Size(309, 41)
-        lblMetodeTitle.TabIndex = 7
-        lblMetodeTitle.Text = "Metode Pembayaran"
+        PanelMetode.BackColor = Color.White
+        PanelMetode.Controls.Add(RbKredit)
+        PanelMetode.Controls.Add(RbOvo)
+        PanelMetode.Controls.Add(RbTransfer)
+        PanelMetode.Location = New Point(23, 473)
+        PanelMetode.Margin = New Padding(3, 4, 3, 4)
+        PanelMetode.Name = "PanelMetode"
+        PanelMetode.Size = New Size(411, 40)
+        PanelMetode.TabIndex = 15
         ' 
-        ' rbTransfer
+        ' RbKredit
         ' 
-        rbTransfer.AutoSize = True
-        rbTransfer.Location = New Point(198, 466)
-        rbTransfer.Name = "rbTransfer"
-        rbTransfer.Size = New Size(188, 36)
-        rbTransfer.TabIndex = 8
-        rbTransfer.Text = "Transfer Bank"
-        rbTransfer.UseVisualStyleBackColor = True
+        RbKredit.AutoSize = True
+        RbKredit.Font = New Font("Segoe UI", 9.0F)
+        RbKredit.Location = New Point(291, 4)
+        RbKredit.Margin = New Padding(3, 4, 3, 4)
+        RbKredit.Name = "RbKredit"
+        RbKredit.Size = New Size(109, 24)
+        RbKredit.TabIndex = 2
+        RbKredit.TabStop = True
+        RbKredit.Text = "Kartu Kredit"
+        RbKredit.UseVisualStyleBackColor = True
         ' 
-        ' rbOvo
+        ' RbOvo
         ' 
-        rbOvo.AutoSize = True
-        rbOvo.Location = New Point(469, 466)
-        rbOvo.Name = "rbOvo"
-        rbOvo.Size = New Size(203, 36)
-        rbOvo.TabIndex = 9
-        rbOvo.Text = "OVO (E-Wallet)"
-        rbOvo.UseVisualStyleBackColor = True
+        RbOvo.AutoSize = True
+        RbOvo.Font = New Font("Segoe UI", 9.0F)
+        RbOvo.Location = New Point(143, 4)
+        RbOvo.Margin = New Padding(3, 4, 3, 4)
+        RbOvo.Name = "RbOvo"
+        RbOvo.Size = New Size(131, 24)
+        RbOvo.TabIndex = 1
+        RbOvo.TabStop = True
+        RbOvo.Text = "OVO (E-Wallet)"
+        RbOvo.UseVisualStyleBackColor = True
         ' 
-        ' rbKredit
+        ' RbTransfer
         ' 
-        rbKredit.AutoSize = True
-        rbKredit.Checked = True
-        rbKredit.Location = New Point(754, 466)
-        rbKredit.Name = "rbKredit"
-        rbKredit.Size = New Size(171, 36)
-        rbKredit.TabIndex = 10
-        rbKredit.TabStop = True
-        rbKredit.Text = "Kartu Kredit"
-        rbKredit.UseVisualStyleBackColor = True
+        RbTransfer.AutoSize = True
+        RbTransfer.Font = New Font("Segoe UI", 9.0F)
+        RbTransfer.Location = New Point(0, 4)
+        RbTransfer.Margin = New Padding(3, 4, 3, 4)
+        RbTransfer.Name = "RbTransfer"
+        RbTransfer.Size = New Size(118, 24)
+        RbTransfer.TabIndex = 0
+        RbTransfer.TabStop = True
+        RbTransfer.Text = "Transfer Bank"
+        RbTransfer.UseVisualStyleBackColor = True
         ' 
-        ' btnLanjut
+        ' LblTitleMetode
         ' 
-        btnLanjut.BackColor = Color.Teal
-        btnLanjut.FlatAppearance.BorderColor = Color.Black
-        btnLanjut.FlatAppearance.BorderSize = 2
-        btnLanjut.FlatStyle = FlatStyle.Flat
-        btnLanjut.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnLanjut.ForeColor = Color.White
-        btnLanjut.Location = New Point(198, 521)
-        btnLanjut.Name = "btnLanjut"
-        btnLanjut.Size = New Size(835, 50)
-        btnLanjut.TabIndex = 11
-        btnLanjut.Text = "Lanjut ke Pembayaran"
-        btnLanjut.UseVisualStyleBackColor = False
+        LblTitleMetode.AutoSize = True
+        LblTitleMetode.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        LblTitleMetode.ForeColor = Color.Black
+        LblTitleMetode.Location = New Point(23, 440)
+        LblTitleMetode.Name = "LblTitleMetode"
+        LblTitleMetode.Size = New Size(175, 23)
+        LblTitleMetode.TabIndex = 14
+        LblTitleMetode.Text = "Metode Pembayaran"
         ' 
-        ' Label1
+        ' PanelGarisMetode
         ' 
-        Label1.AutoEllipsis = True
-        Label1.BorderStyle = BorderStyle.FixedSingle
-        Label1.Location = New Point(704, 373)
-        Label1.Margin = New Padding(0)
-        Label1.MaximumSize = New Size(0, 300)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(320, 2)
-        Label1.TabIndex = 12
-        Label1.TextAlign = ContentAlignment.TopCenter
+        PanelGarisMetode.BackColor = Color.Gainsboro
+        PanelGarisMetode.Location = New Point(23, 427)
+        PanelGarisMetode.Margin = New Padding(3, 4, 3, 4)
+        PanelGarisMetode.Name = "PanelGarisMetode"
+        PanelGarisMetode.Size = New Size(411, 1)
+        PanelGarisMetode.TabIndex = 13
+        ' 
+        ' LblNilaiTotal
+        ' 
+        LblNilaiTotal.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        LblNilaiTotal.Location = New Point(263, 380)
+        LblNilaiTotal.Name = "LblNilaiTotal"
+        LblNilaiTotal.Size = New Size(171, 27)
+        LblNilaiTotal.TabIndex = 11
+        LblNilaiTotal.Text = "Rp0"
+        LblNilaiTotal.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' LblTitleTotal
+        ' 
+        LblTitleTotal.AutoSize = True
+        LblTitleTotal.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        LblTitleTotal.Location = New Point(23, 380)
+        LblTitleTotal.Name = "LblTitleTotal"
+        LblTitleTotal.Size = New Size(154, 23)
+        LblTitleTotal.TabIndex = 10
+        LblTitleTotal.Text = "Total pembayaran"
+        ' 
+        ' LblNilaiSubtotal
+        ' 
+        LblNilaiSubtotal.Font = New Font("Segoe UI", 10.0F)
+        LblNilaiSubtotal.ForeColor = Color.DimGray
+        LblNilaiSubtotal.Location = New Point(263, 340)
+        LblNilaiSubtotal.Name = "LblNilaiSubtotal"
+        LblNilaiSubtotal.Size = New Size(171, 27)
+        LblNilaiSubtotal.TabIndex = 9
+        LblNilaiSubtotal.Text = "Rp0"
+        LblNilaiSubtotal.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' LblTitleSubtotal
+        ' 
+        LblTitleSubtotal.AutoSize = True
+        LblTitleSubtotal.Font = New Font("Segoe UI", 10.0F)
+        LblTitleSubtotal.Location = New Point(23, 340)
+        LblTitleSubtotal.Name = "LblTitleSubtotal"
+        LblTitleSubtotal.Size = New Size(74, 23)
+        LblTitleSubtotal.TabIndex = 8
+        LblTitleSubtotal.Text = "Subtotal"
+        ' 
+        ' PanelGarisBawah
+        ' 
+        PanelGarisBawah.BackColor = Color.Gainsboro
+        PanelGarisBawah.Location = New Point(23, 320)
+        PanelGarisBawah.Margin = New Padding(3, 4, 3, 4)
+        PanelGarisBawah.Name = "PanelGarisBawah"
+        PanelGarisBawah.Size = New Size(411, 1)
+        PanelGarisBawah.TabIndex = 7
+        ' 
+        ' LblNilaiHargaTiket
+        ' 
+        LblNilaiHargaTiket.Font = New Font("Segoe UI", 10.0F)
+        LblNilaiHargaTiket.ForeColor = Color.DimGray
+        LblNilaiHargaTiket.Location = New Point(263, 253)
+        LblNilaiHargaTiket.Name = "LblNilaiHargaTiket"
+        LblNilaiHargaTiket.Size = New Size(171, 53)
+        LblNilaiHargaTiket.TabIndex = 6
+        LblNilaiHargaTiket.Text = "1 x Rp0" & vbCrLf & "Rp0"
+        LblNilaiHargaTiket.TextAlign = ContentAlignment.TopRight
+        ' 
+        ' LblInfoTiket
+        ' 
+        LblInfoTiket.Font = New Font("Segoe UI", 10.0F)
+        LblInfoTiket.Location = New Point(23, 253)
+        LblInfoTiket.Name = "LblInfoTiket"
+        LblInfoTiket.Size = New Size(229, 53)
+        LblInfoTiket.TabIndex = 5
+        LblInfoTiket.Text = "Tiket" & vbCrLf & "-"
+        ' 
+        ' PanelGarisAtas
+        ' 
+        PanelGarisAtas.BackColor = Color.Gainsboro
+        PanelGarisAtas.Location = New Point(23, 233)
+        PanelGarisAtas.Margin = New Padding(3, 4, 3, 4)
+        PanelGarisAtas.Name = "PanelGarisAtas"
+        PanelGarisAtas.Size = New Size(411, 1)
+        PanelGarisAtas.TabIndex = 4
+        ' 
+        ' LblWaktu
+        ' 
+        LblWaktu.Font = New Font("Segoe UI", 9.0F)
+        LblWaktu.ForeColor = Color.DimGray
+        LblWaktu.Location = New Point(137, 160)
+        LblWaktu.Name = "LblWaktu"
+        LblWaktu.Size = New Size(297, 53)
+        LblWaktu.TabIndex = 3
+        LblWaktu.Text = "Hari, Tanggal | Jam"
+        ' 
+        ' LblStudio
+        ' 
+        LblStudio.Font = New Font("Segoe UI", 9.0F)
+        LblStudio.ForeColor = Color.DimGray
+        LblStudio.Location = New Point(137, 127)
+        LblStudio.Name = "LblStudio"
+        LblStudio.Size = New Size(297, 27)
+        LblStudio.TabIndex = 2
+        LblStudio.Text = "CinemaHub, Studio"
+        ' 
+        ' LblJudul
+        ' 
+        LblJudul.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        LblJudul.Location = New Point(137, 27)
+        LblJudul.Name = "LblJudul"
+        LblJudul.Size = New Size(297, 80)
+        LblJudul.TabIndex = 1
+        LblJudul.Text = "JUDUL FILM"
+        ' 
+        ' PicPoster
+        ' 
+        PicPoster.BackColor = Color.Gainsboro
+        PicPoster.Location = New Point(23, 27)
+        PicPoster.Margin = New Padding(3, 4, 3, 4)
+        PicPoster.Name = "PicPoster"
+        PicPoster.Size = New Size(103, 173)
+        PicPoster.SizeMode = PictureBoxSizeMode.Zoom
+        PicPoster.TabIndex = 0
+        PicPoster.TabStop = False
+        ' 
+        ' LblTitleDetail
+        ' 
+        LblTitleDetail.AutoSize = True
+        LblTitleDetail.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        LblTitleDetail.ForeColor = Color.DarkSlateGray
+        LblTitleDetail.Location = New Point(57, 180)
+        LblTitleDetail.Name = "LblTitleDetail"
+        LblTitleDetail.Size = New Size(142, 25)
+        LblTitleDetail.TabIndex = 3
+        LblTitleDetail.Text = "Detail pesanan"
+        ' 
+        ' TimerPembayaran
+        ' 
+        TimerPembayaran.Interval = 1000
+        ' 
+        ' BtnKembali
+        ' 
+        BtnKembali.Cursor = Cursors.Hand
+        BtnKembali.FlatAppearance.BorderSize = 0
+        BtnKembali.FlatStyle = FlatStyle.Flat
+        BtnKembali.Font = New Font("Segoe UI", 14.0F, FontStyle.Bold)
+        BtnKembali.Location = New Point(11, 120)
+        BtnKembali.Margin = New Padding(3, 4, 3, 4)
+        BtnKembali.Name = "BtnKembali"
+        BtnKembali.Size = New Size(46, 47)
+        BtnKembali.TabIndex = 6
+        BtnKembali.Text = "←"
+        BtnKembali.UseVisualStyleBackColor = True
         ' 
         ' FormPembayaran
         ' 
-        AutoScaleDimensions = New SizeF(13.0F, 32.0F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.WhiteSmoke
-        ClientSize = New Size(1083, 583)
-        Controls.Add(Label1)
-        Controls.Add(btnLanjut)
-        Controls.Add(rbKredit)
-        Controls.Add(rbOvo)
-        Controls.Add(rbTransfer)
-        Controls.Add(lblMetodeTitle)
-        Controls.Add(lblHargaValues)
-        Controls.Add(lblDetailHargaTitle)
-        Controls.Add(lblMovieDetails)
-        Controls.Add(picPoster)
-        Controls.Add(lblRingkasanTitle)
-        Controls.Add(lblTitle)
-        Controls.Add(PanelLeft)
-        DoubleBuffered = True
-        Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        FormBorderStyle = FormBorderStyle.FixedDialog
+        BackColor = Color.AliceBlue
+        ClientSize = New Size(571, 907)
+        Controls.Add(BtnKembali)
+        Controls.Add(LblTitleDetail)
+        Controls.Add(PanelDetailKanan)
+        Controls.Add(LblTitleHalaman)
+        Controls.Add(PanelHeaderTimer)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "FormPembayaran"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Konfirmasi Pembayaran"
-        CType(picPoster, ComponentModel.ISupportInitialize).EndInit()
+        Text = "Konfirmasi Pesanan"
+        PanelHeaderTimer.ResumeLayout(False)
+        PanelHeaderTimer.PerformLayout()
+        PanelDetailKanan.ResumeLayout(False)
+        PanelDetailKanan.PerformLayout()
+        PanelMetode.ResumeLayout(False)
+        PanelMetode.PerformLayout()
+        CType(PicPoster, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents PanelHeaderTimer As Panel
+    Friend WithEvents LblPesanTimer As Label
+    Friend WithEvents LblWaktuTimer As Label
+    Friend WithEvents LblSubPesanTimer As Label
+    Friend WithEvents LblTitleHalaman As Label
+    Friend WithEvents PanelDetailKanan As Panel
+    Friend WithEvents PicPoster As PictureBox
+    Friend WithEvents LblJudul As Label
+    Friend WithEvents LblWaktu As Label
+    Friend WithEvents LblStudio As Label
+    Friend WithEvents LblTitleDetail As Label
+    Friend WithEvents PanelGarisAtas As Panel
+    Friend WithEvents LblNilaiHargaTiket As Label
+    Friend WithEvents LblInfoTiket As Label
+    Friend WithEvents PanelGarisBawah As Panel
+    Friend WithEvents LblNilaiTotal As Label
+    Friend WithEvents LblTitleTotal As Label
+    Friend WithEvents LblNilaiSubtotal As Label
+    Friend WithEvents LblTitleSubtotal As Label
+    Friend WithEvents BtnLanjutBayar As Button
+    Friend WithEvents LblTitleMetode As Label
+    Friend WithEvents PanelMetode As Panel
+    Friend WithEvents PanelGarisMetode As Panel
+    Friend WithEvents RbKredit As RadioButton
+    Friend WithEvents RbOvo As RadioButton
+    Friend WithEvents RbTransfer As RadioButton
+    Friend WithEvents TimerPembayaran As Timer
+    Friend WithEvents BtnKembali As Button
 End Class

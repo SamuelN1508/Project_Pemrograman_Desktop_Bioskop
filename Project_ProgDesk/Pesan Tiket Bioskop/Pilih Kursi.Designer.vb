@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class PilihKursi
+Partial Class Pilih_Kursi
     Inherits System.Windows.Forms.Form
 
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -17,298 +17,255 @@ Partial Class PilihKursi
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        LblTitle = New Label()
-        PnlLayar = New Panel()
+        PanelKiri = New Panel()
+        FlpKursi = New FlowLayoutPanel()
+        PanelLayar = New Panel()
         LblLayar = New Label()
-        PnlLegend = New Panel()
-        Label5 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        BoxTerblokir = New PictureBox()
-        BoxDipilih = New PictureBox()
-        BoxDipesan = New PictureBox()
-        BoxTersedia = New PictureBox()
-        PnlKursi = New Panel()
-        LblKursiDipilih = New Label()
-        PnlDetail = New Panel()
-        LblDetailInfo = New Label()
-        LblDetailJudul = New Label()
-        BtnLanjut = New Button()
-        BtnBack = New Button()
-        PnlLayar.SuspendLayout()
-        PnlLegend.SuspendLayout()
-        CType(BoxTerblokir, ComponentModel.ISupportInitialize).BeginInit()
-        CType(BoxDipilih, ComponentModel.ISupportInitialize).BeginInit()
-        CType(BoxDipesan, ComponentModel.ISupportInitialize).BeginInit()
-        CType(BoxTersedia, ComponentModel.ISupportInitialize).BeginInit()
-        PnlDetail.SuspendLayout()
+        PanelKanan = New Panel()
+        PicPosterDetail = New PictureBox()
+        LblJudulDetail = New Label()
+        LblStudioDetail = New Label()
+        LblWaktuDetail = New Label()
+        PanelGaris = New Panel()
+        LblTitleKursi = New Label()
+        LblKursiTerpilih = New Label()
+        LblTitleTotal = New Label()
+        LblTotalHarga = New Label()
+        BtnKembali = New Button()
+        BtnLanjutBayar = New Button()
+        PanelKiri.SuspendLayout()
+        PanelLayar.SuspendLayout()
+        PanelKanan.SuspendLayout()
+        CType(PicPosterDetail, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' LblTitle
+        ' PanelKiri
         ' 
-        LblTitle.AutoSize = True
-        LblTitle.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
-        LblTitle.Location = New Point(25, 19)
-        LblTitle.Margin = New Padding(4, 0, 4, 0)
-        LblTitle.Name = "LblTitle"
-        LblTitle.Size = New Size(313, 45)
-        LblTitle.TabIndex = 0
-        LblTitle.Text = "Halaman Pilih Kursi"
+        PanelKiri.BackColor = Color.WhiteSmoke
+        PanelKiri.Controls.Add(FlpKursi)
+        PanelKiri.Controls.Add(PanelLayar)
+        PanelKiri.Dock = DockStyle.Fill
+        PanelKiri.Location = New Point(0, 0)
+        PanelKiri.Margin = New Padding(3, 4, 3, 4)
+        PanelKiri.Name = "PanelKiri"
+        PanelKiri.Padding = New Padding(23, 27, 23, 27)
+        PanelKiri.Size = New Size(743, 800)
+        PanelKiri.TabIndex = 0
         ' 
-        ' PnlLayar
+        ' FlpKursi
         ' 
-        PnlLayar.Controls.Add(LblLayar)
-        PnlLayar.Location = New Point(38, 88)
-        PnlLayar.Margin = New Padding(4, 4, 4, 4)
-        PnlLayar.Name = "PnlLayar"
-        PnlLayar.Size = New Size(675, 38)
-        PnlLayar.TabIndex = 1
+        FlpKursi.Dock = DockStyle.Fill
+        FlpKursi.Location = New Point(23, 67)
+        FlpKursi.Margin = New Padding(3, 4, 3, 4)
+        FlpKursi.Name = "FlpKursi"
+        FlpKursi.Padding = New Padding(11, 13, 11, 13)
+        FlpKursi.Size = New Size(697, 706)
+        FlpKursi.TabIndex = 1
+        ' 
+        ' PanelLayar
+        ' 
+        PanelLayar.BackColor = Color.LightGray
+        PanelLayar.Controls.Add(LblLayar)
+        PanelLayar.Dock = DockStyle.Top
+        PanelLayar.Location = New Point(23, 27)
+        PanelLayar.Margin = New Padding(3, 4, 3, 4)
+        PanelLayar.Name = "PanelLayar"
+        PanelLayar.Size = New Size(697, 40)
+        PanelLayar.TabIndex = 0
         ' 
         ' LblLayar
         ' 
-        LblLayar.AutoSize = True
-        LblLayar.BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        LblLayar.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        LblLayar.Location = New Point(306, 6)
-        LblLayar.Margin = New Padding(4, 0, 4, 0)
+        LblLayar.Dock = DockStyle.Fill
+        LblLayar.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        LblLayar.ForeColor = Color.DimGray
+        LblLayar.Location = New Point(0, 0)
         LblLayar.Name = "LblLayar"
-        LblLayar.Size = New Size(58, 25)
+        LblLayar.Size = New Size(697, 40)
         LblLayar.TabIndex = 0
-        LblLayar.Text = "Layar"
+        LblLayar.Text = "A R E A   L A Y A R"
+        LblLayar.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' PnlLegend
+        ' PanelKanan
         ' 
-        PnlLegend.Controls.Add(Label5)
-        PnlLegend.Controls.Add(Label6)
-        PnlLegend.Controls.Add(Label7)
-        PnlLegend.Controls.Add(Label8)
-        PnlLegend.Controls.Add(BoxTerblokir)
-        PnlLegend.Controls.Add(BoxDipilih)
-        PnlLegend.Controls.Add(BoxDipesan)
-        PnlLegend.Controls.Add(BoxTersedia)
-        PnlLegend.Location = New Point(850, 138)
-        PnlLegend.Margin = New Padding(4, 4, 4, 4)
-        PnlLegend.Name = "PnlLegend"
-        PnlLegend.Size = New Size(150, 175)
-        PnlLegend.TabIndex = 2
+        PanelKanan.BackColor = Color.White
+        PanelKanan.Controls.Add(PicPosterDetail)
+        PanelKanan.Controls.Add(LblJudulDetail)
+        PanelKanan.Controls.Add(LblStudioDetail)
+        PanelKanan.Controls.Add(LblWaktuDetail)
+        PanelKanan.Controls.Add(PanelGaris)
+        PanelKanan.Controls.Add(LblTitleKursi)
+        PanelKanan.Controls.Add(LblKursiTerpilih)
+        PanelKanan.Controls.Add(LblTitleTotal)
+        PanelKanan.Controls.Add(LblTotalHarga)
+        PanelKanan.Controls.Add(BtnKembali)
+        PanelKanan.Controls.Add(BtnLanjutBayar)
+        PanelKanan.Dock = DockStyle.Right
+        PanelKanan.Location = New Point(743, 0)
+        PanelKanan.Margin = New Padding(3, 4, 3, 4)
+        PanelKanan.Name = "PanelKanan"
+        PanelKanan.Size = New Size(400, 800)
+        PanelKanan.TabIndex = 1
         ' 
-        ' Label5
+        ' PicPosterDetail
         ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(44, 131)
-        Label5.Margin = New Padding(4, 0, 4, 0)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(79, 25)
-        Label5.TabIndex = 7
-        Label5.Text = "Terblokir"
+        PicPosterDetail.BackColor = Color.Gainsboro
+        PicPosterDetail.Location = New Point(23, 40)
+        PicPosterDetail.Margin = New Padding(3, 4, 3, 4)
+        PicPosterDetail.Name = "PicPosterDetail"
+        PicPosterDetail.Size = New Size(114, 187)
+        PicPosterDetail.SizeMode = PictureBoxSizeMode.Zoom
+        PicPosterDetail.TabIndex = 0
+        PicPosterDetail.TabStop = False
         ' 
-        ' Label6
+        ' LblJudulDetail
         ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(44, 94)
-        Label6.Margin = New Padding(4, 0, 4, 0)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(62, 25)
-        Label6.TabIndex = 6
-        Label6.Text = "Dipilih"
+        LblJudulDetail.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        LblJudulDetail.Location = New Point(154, 40)
+        LblJudulDetail.Name = "LblJudulDetail"
+        LblJudulDetail.Size = New Size(229, 67)
+        LblJudulDetail.TabIndex = 1
+        LblJudulDetail.Text = "JUDUL FILM"
         ' 
-        ' Label7
+        ' LblStudioDetail
         ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(44, 56)
-        Label7.Margin = New Padding(4, 0, 4, 0)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(76, 25)
-        Label7.TabIndex = 5
-        Label7.Text = "Dipesan"
+        LblStudioDetail.Font = New Font("Segoe UI", 9.5F)
+        LblStudioDetail.ForeColor = Color.DimGray
+        LblStudioDetail.Location = New Point(154, 120)
+        LblStudioDetail.Name = "LblStudioDetail"
+        LblStudioDetail.Size = New Size(229, 27)
+        LblStudioDetail.TabIndex = 2
+        LblStudioDetail.Text = "Nama Studio"
         ' 
-        ' Label8
+        ' LblWaktuDetail
         ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(44, 19)
-        Label8.Margin = New Padding(4, 0, 4, 0)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(75, 25)
-        Label8.TabIndex = 4
-        Label8.Text = "Tersedia"
+        LblWaktuDetail.Font = New Font("Segoe UI", 9.5F)
+        LblWaktuDetail.ForeColor = Color.DimGray
+        LblWaktuDetail.Location = New Point(154, 160)
+        LblWaktuDetail.Name = "LblWaktuDetail"
+        LblWaktuDetail.Size = New Size(229, 53)
+        LblWaktuDetail.TabIndex = 3
+        LblWaktuDetail.Text = "Tanggal, Waktu"
         ' 
-        ' BoxTerblokir
+        ' PanelGaris
         ' 
-        BoxTerblokir.BackColor = Color.Gray
-        BoxTerblokir.BorderStyle = BorderStyle.FixedSingle
-        BoxTerblokir.Location = New Point(12, 131)
-        BoxTerblokir.Margin = New Padding(4, 4, 4, 4)
-        BoxTerblokir.Name = "BoxTerblokir"
-        BoxTerblokir.Size = New Size(24, 24)
-        BoxTerblokir.TabIndex = 3
-        BoxTerblokir.TabStop = False
+        PanelGaris.BackColor = Color.LightGray
+        PanelGaris.Location = New Point(23, 253)
+        PanelGaris.Margin = New Padding(3, 4, 3, 4)
+        PanelGaris.Name = "PanelGaris"
+        PanelGaris.Size = New Size(354, 1)
+        PanelGaris.TabIndex = 4
         ' 
-        ' BoxDipilih
+        ' LblTitleKursi
         ' 
-        BoxDipilih.BackColor = Color.FromArgb(CByte(46), CByte(139), CByte(135))
-        BoxDipilih.BorderStyle = BorderStyle.FixedSingle
-        BoxDipilih.Location = New Point(12, 94)
-        BoxDipilih.Margin = New Padding(4, 4, 4, 4)
-        BoxDipilih.Name = "BoxDipilih"
-        BoxDipilih.Size = New Size(24, 24)
-        BoxDipilih.TabIndex = 2
-        BoxDipilih.TabStop = False
+        LblTitleKursi.AutoSize = True
+        LblTitleKursi.Font = New Font("Segoe UI", 10.0F)
+        LblTitleKursi.ForeColor = Color.Gray
+        LblTitleKursi.Location = New Point(23, 280)
+        LblTitleKursi.Name = "LblTitleKursi"
+        LblTitleKursi.Size = New Size(106, 23)
+        LblTitleKursi.TabIndex = 5
+        LblTitleKursi.Text = "Nomor Kursi"
         ' 
-        ' BoxDipesan
+        ' LblKursiTerpilih
         ' 
-        BoxDipesan.BackColor = Color.IndianRed
-        BoxDipesan.BorderStyle = BorderStyle.FixedSingle
-        BoxDipesan.Location = New Point(12, 56)
-        BoxDipesan.Margin = New Padding(4, 4, 4, 4)
-        BoxDipesan.Name = "BoxDipesan"
-        BoxDipesan.Size = New Size(24, 24)
-        BoxDipesan.TabIndex = 1
-        BoxDipesan.TabStop = False
+        LblKursiTerpilih.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        LblKursiTerpilih.ForeColor = Color.DarkSlateGray
+        LblKursiTerpilih.Location = New Point(23, 320)
+        LblKursiTerpilih.Name = "LblKursiTerpilih"
+        LblKursiTerpilih.Size = New Size(354, 67)
+        LblKursiTerpilih.TabIndex = 6
+        LblKursiTerpilih.Text = "-"
         ' 
-        ' BoxTersedia
+        ' LblTitleTotal
         ' 
-        BoxTersedia.BackColor = Color.White
-        BoxTersedia.BorderStyle = BorderStyle.FixedSingle
-        BoxTersedia.Location = New Point(12, 19)
-        BoxTersedia.Margin = New Padding(4, 4, 4, 4)
-        BoxTersedia.Name = "BoxTersedia"
-        BoxTersedia.Size = New Size(24, 24)
-        BoxTersedia.TabIndex = 0
-        BoxTersedia.TabStop = False
+        LblTitleTotal.AutoSize = True
+        LblTitleTotal.Font = New Font("Segoe UI", 10.0F)
+        LblTitleTotal.ForeColor = Color.Gray
+        LblTitleTotal.Location = New Point(23, 413)
+        LblTitleTotal.Name = "LblTitleTotal"
+        LblTitleTotal.Size = New Size(145, 23)
+        LblTitleTotal.TabIndex = 7
+        LblTitleTotal.Text = "Total Pembayaran"
         ' 
-        ' PnlKursi
+        ' LblTotalHarga
         ' 
-        PnlKursi.Location = New Point(31, 138)
-        PnlKursi.Margin = New Padding(4, 4, 4, 4)
-        PnlKursi.Name = "PnlKursi"
-        PnlKursi.Size = New Size(812, 400)
-        PnlKursi.TabIndex = 3
+        LblTotalHarga.AutoSize = True
+        LblTotalHarga.Font = New Font("Segoe UI", 16.0F, FontStyle.Bold)
+        LblTotalHarga.ForeColor = Color.Teal
+        LblTotalHarga.Location = New Point(21, 453)
+        LblTotalHarga.Name = "LblTotalHarga"
+        LblTotalHarga.Size = New Size(68, 37)
+        LblTotalHarga.TabIndex = 8
+        LblTotalHarga.Text = "Rp0"
         ' 
-        ' LblKursiDipilih
+        ' BtnKembali
         ' 
-        LblKursiDipilih.AutoSize = True
-        LblKursiDipilih.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
-        LblKursiDipilih.Location = New Point(31, 575)
-        LblKursiDipilih.Margin = New Padding(4, 0, 4, 0)
-        LblKursiDipilih.Name = "LblKursiDipilih"
-        LblKursiDipilih.Size = New Size(197, 28)
-        LblKursiDipilih.TabIndex = 4
-        LblKursiDipilih.Text = "Kursi yang dipilih: -"
+        BtnKembali.BackColor = Color.LightGray
+        BtnKembali.Cursor = Cursors.Hand
+        BtnKembali.Dock = DockStyle.Bottom
+        BtnKembali.FlatAppearance.BorderSize = 0
+        BtnKembali.FlatStyle = FlatStyle.Flat
+        BtnKembali.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        BtnKembali.ForeColor = Color.DimGray
+        BtnKembali.Location = New Point(0, 676)
+        BtnKembali.Margin = New Padding(3, 4, 3, 4)
+        BtnKembali.Name = "BtnKembali"
+        BtnKembali.Size = New Size(400, 44)
+        BtnKembali.TabIndex = 10
+        BtnKembali.Text = "Kembali"
+        BtnKembali.UseVisualStyleBackColor = False
         ' 
-        ' PnlDetail
+        ' BtnLanjutBayar
         ' 
-        PnlDetail.BackColor = Color.White
-        PnlDetail.BorderStyle = BorderStyle.FixedSingle
-        PnlDetail.Controls.Add(LblDetailInfo)
-        PnlDetail.Controls.Add(LblDetailJudul)
-        PnlDetail.Location = New Point(656, 550)
-        PnlDetail.Margin = New Padding(4, 4, 4, 4)
-        PnlDetail.Name = "PnlDetail"
-        PnlDetail.Size = New Size(374, 74)
-        PnlDetail.TabIndex = 5
+        BtnLanjutBayar.BackColor = Color.Teal
+        BtnLanjutBayar.Cursor = Cursors.Hand
+        BtnLanjutBayar.Dock = DockStyle.Bottom
+        BtnLanjutBayar.FlatAppearance.BorderSize = 0
+        BtnLanjutBayar.FlatStyle = FlatStyle.Flat
+        BtnLanjutBayar.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
+        BtnLanjutBayar.ForeColor = Color.White
+        BtnLanjutBayar.Location = New Point(0, 720)
+        BtnLanjutBayar.Margin = New Padding(3, 4, 3, 4)
+        BtnLanjutBayar.Name = "BtnLanjutBayar"
+        BtnLanjutBayar.Size = New Size(400, 80)
+        BtnLanjutBayar.TabIndex = 9
+        BtnLanjutBayar.Text = "Lanjut ke Pembayaran"
+        BtnLanjutBayar.UseVisualStyleBackColor = False
         ' 
-        ' LblDetailInfo
+        ' Pilih_Kursi
         ' 
-        LblDetailInfo.AutoSize = True
-        LblDetailInfo.Font = New Font("Segoe UI", 9.0F)
-        LblDetailInfo.Location = New Point(6, 38)
-        LblDetailInfo.Margin = New Padding(4, 0, 4, 0)
-        LblDetailInfo.Name = "LblDetailInfo"
-        LblDetailInfo.Size = New Size(220, 25)
-        LblDetailInfo.TabIndex = 1
-        LblDetailInfo.Text = "Film Title | Studio 1 | 14:00"
-        ' 
-        ' LblDetailJudul
-        ' 
-        LblDetailJudul.AutoSize = True
-        LblDetailJudul.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        LblDetailJudul.Location = New Point(6, 6)
-        LblDetailJudul.Margin = New Padding(4, 0, 4, 0)
-        LblDetailJudul.Name = "LblDetailJudul"
-        LblDetailJudul.Size = New Size(172, 25)
-        LblDetailJudul.TabIndex = 0
-        LblDetailJudul.Text = "Detail Pembayaran"
-        ' 
-        ' BtnLanjut
-        ' 
-        BtnLanjut.BackColor = Color.FromArgb(CByte(46), CByte(139), CByte(135))
-        BtnLanjut.FlatAppearance.BorderSize = 0
-        BtnLanjut.FlatStyle = FlatStyle.Flat
-        BtnLanjut.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
-        BtnLanjut.ForeColor = Color.White
-        BtnLanjut.Location = New Point(31, 650)
-        BtnLanjut.Margin = New Padding(4, 4, 4, 4)
-        BtnLanjut.Name = "BtnLanjut"
-        BtnLanjut.Size = New Size(1000, 56)
-        BtnLanjut.TabIndex = 6
-        BtnLanjut.Text = "Lanjut ke Pembayaran"
-        BtnLanjut.UseVisualStyleBackColor = False
-        ' 
-        ' BtnBack
-        ' 
-        BtnBack.BackColor = Color.DimGray
-        BtnBack.Cursor = Cursors.Hand
-        BtnBack.FlatAppearance.BorderSize = 0
-        BtnBack.FlatStyle = FlatStyle.Flat
-        BtnBack.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
-        BtnBack.ForeColor = Color.White
-        BtnBack.Location = New Point(920, 25)
-        BtnBack.Name = "BtnBack"
-        BtnBack.Size = New Size(110, 35)
-        BtnBack.TabIndex = 7
-        BtnBack.Text = "< Kembali"
-        BtnBack.UseVisualStyleBackColor = False
-        ' 
-        ' PilihKursi
-        ' 
-        AutoScaleDimensions = New SizeF(10.0F, 25.0F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.FromArgb(CByte(240), CByte(240), CByte(240))
-        ClientSize = New Size(1062, 750)
-        Controls.Add(BtnBack)
-        Controls.Add(BtnLanjut)
-        Controls.Add(PnlDetail)
-        Controls.Add(LblKursiDipilih)
-        Controls.Add(PnlKursi)
-        Controls.Add(PnlLegend)
-        Controls.Add(PnlLayar)
-        Controls.Add(LblTitle)
-        Margin = New Padding(4, 4, 4, 4)
-        Name = "PilihKursi"
+        ClientSize = New Size(1143, 800)
+        Controls.Add(PanelKiri)
+        Controls.Add(PanelKanan)
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "Pilih_Kursi"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Pilih Kursi"
-        PnlLayar.ResumeLayout(False)
-        PnlLayar.PerformLayout()
-        PnlLegend.ResumeLayout(False)
-        PnlLegend.PerformLayout()
-        CType(BoxTerblokir, ComponentModel.ISupportInitialize).EndInit()
-        CType(BoxDipilih, ComponentModel.ISupportInitialize).EndInit()
-        CType(BoxDipesan, ComponentModel.ISupportInitialize).EndInit()
-        CType(BoxTersedia, ComponentModel.ISupportInitialize).EndInit()
-        PnlDetail.ResumeLayout(False)
-        PnlDetail.PerformLayout()
+        PanelKiri.ResumeLayout(False)
+        PanelLayar.ResumeLayout(False)
+        PanelKanan.ResumeLayout(False)
+        PanelKanan.PerformLayout()
+        CType(PicPosterDetail, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
+
     End Sub
 
-    Friend WithEvents LblTitle As Label
-    Friend WithEvents PnlLayar As Panel
+    Friend WithEvents PanelKiri As Panel
+    Friend WithEvents PanelKanan As Panel
+    Friend WithEvents PanelLayar As Panel
     Friend WithEvents LblLayar As Label
-    Friend WithEvents PnlLegend As Panel
-    Friend WithEvents BoxTerblokir As PictureBox
-    Friend WithEvents BoxDipilih As PictureBox
-    Friend WithEvents BoxDipesan As PictureBox
-    Friend WithEvents BoxTersedia As PictureBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents PnlKursi As Panel
-    Friend WithEvents LblKursiDipilih As Label
-    Friend WithEvents PnlDetail As Panel
-    Friend WithEvents LblDetailInfo As Label
-    Friend WithEvents LblDetailJudul As Label
-    Friend WithEvents BtnLanjut As Button
-    Friend WithEvents BtnBack As Button
+    Friend WithEvents FlpKursi As FlowLayoutPanel
+    Friend WithEvents PicPosterDetail As PictureBox
+    Friend WithEvents LblJudulDetail As Label
+    Friend WithEvents LblStudioDetail As Label
+    Friend WithEvents LblWaktuDetail As Label
+    Friend WithEvents PanelGaris As Panel
+    Friend WithEvents LblTitleKursi As Label
+    Friend WithEvents LblKursiTerpilih As Label
+    Friend WithEvents LblTitleTotal As Label
+    Friend WithEvents LblTotalHarga As Label
+    Friend WithEvents BtnLanjutBayar As Button
+    Friend WithEvents BtnKembali As Button ' [TAMBAHAN]
 End Class

@@ -30,6 +30,7 @@ Partial Class Pilih_Studio
         Me.LblGenre = New System.Windows.Forms.Label()
         Me.LblFilmInfo = New System.Windows.Forms.Label()
         Me.PanelKanan = New System.Windows.Forms.Panel()
+        Me.FlpTanggal = New System.Windows.Forms.FlowLayoutPanel() ' [TAMBAHAN] Panel untuk Tanggal
         Me.FlowLayoutStudios = New System.Windows.Forms.FlowLayoutPanel()
         Me.PanelStudio1 = New System.Windows.Forms.Panel()
         Me.BtnPilih1 = New System.Windows.Forms.Button()
@@ -104,8 +105,7 @@ Partial Class Pilih_Studio
         Me.LblSinopsisText.Name = "LblSinopsisText"
         Me.LblSinopsisText.Size = New System.Drawing.Size(190, 270)
         Me.LblSinopsisText.TabIndex = 4
-        Me.LblSinopsisText.Text = "Film ini menceritakan tentang petualangan epik penuh aksi yang sangat menegangkan" &
-    " dengan berbagai rintangan untuk mencapai tujuan utama..."
+        Me.LblSinopsisText.Text = "Film ini menceritakan tentang petualangan epik penuh aksi yang sangat menegangkan dengan berbagai rintangan untuk mencapai tujuan utama..."
         '
         'LblSinopsisTitle
         '
@@ -150,6 +150,7 @@ Partial Class Pilih_Studio
         'PanelKanan
         '
         Me.PanelKanan.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PanelKanan.Controls.Add(Me.FlpTanggal) ' [TAMBAHAN] Memasukkan panel tanggal
         Me.PanelKanan.Controls.Add(Me.FlowLayoutStudios)
         Me.PanelKanan.Controls.Add(Me.LblFilmTitleRight)
         Me.PanelKanan.Controls.Add(Me.LblPilihStudioTitle)
@@ -158,6 +159,15 @@ Partial Class Pilih_Studio
         Me.PanelKanan.Name = "PanelKanan"
         Me.PanelKanan.Size = New System.Drawing.Size(630, 500)
         Me.PanelKanan.TabIndex = 1
+        '
+        'FlpTanggal
+        ' [TAMBAHAN] Pengaturan Posisi Panel Tanggal
+        Me.FlpTanggal.AutoScroll = True
+        Me.FlpTanggal.Location = New System.Drawing.Point(25, 95)
+        Me.FlpTanggal.Name = "FlpTanggal"
+        Me.FlpTanggal.Size = New System.Drawing.Size(580, 85)
+        Me.FlpTanggal.TabIndex = 3
+        Me.FlpTanggal.WrapContents = False
         '
         'FlowLayoutStudios
         '
@@ -168,9 +178,9 @@ Partial Class Pilih_Studio
         Me.FlowLayoutStudios.Controls.Add(Me.PanelStudio4)
         Me.FlowLayoutStudios.Controls.Add(Me.PanelStudio5)
         Me.FlowLayoutStudios.Controls.Add(Me.PanelStudio6)
-        Me.FlowLayoutStudios.Location = New System.Drawing.Point(25, 100)
+        Me.FlowLayoutStudios.Location = New System.Drawing.Point(25, 190) ' Geser sedikit ke bawah untuk memberi ruang FlpTanggal
         Me.FlowLayoutStudios.Name = "FlowLayoutStudios"
-        Me.FlowLayoutStudios.Size = New System.Drawing.Size(580, 380)
+        Me.FlowLayoutStudios.Size = New System.Drawing.Size(580, 290) ' Menyesuaikan sisa tinggi layar
         Me.FlowLayoutStudios.TabIndex = 2
         '
         'PanelStudio1
@@ -529,5 +539,6 @@ Partial Class Pilih_Studio
     Friend WithEvents LblDesc6 As System.Windows.Forms.Label
     Friend WithEvents LblNamaStudio6 As System.Windows.Forms.Label
     Friend WithEvents BtnBack As System.Windows.Forms.Button
+    Friend WithEvents FlpTanggal As System.Windows.Forms.FlowLayoutPanel ' [TAMBAHAN] Deklarasi Panel Tanggal
 
 End Class

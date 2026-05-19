@@ -1,4 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient ' Ini library khusus untuk MySQL / XAMPP
+Imports System.Drawing ' Tambahan agar bisa mengenali tipe data Image
+Imports System.IO ' [TAMBAHAN] Wajib ditambahkan untuk memproses aliran data (Stream) gambar
 
 Module Modul_Global
 
@@ -24,6 +26,15 @@ Module Modul_Global
     Public Transisi_Judul_Film As String = ""
     Public Transisi_ID_Jadwal As String = ""
     Public Transisi_Harga_Tiket As Decimal = 0
+
+    ' Variabel untuk menyimpan daftar kursi dan studio
+    Public Transisi_Daftar_Kursi As String = ""
+    Public Transisi_Nama_Studio As String = ""
+    Public Transisi_Waktu_Tayang As String = ""
+
+    ' INI TAMBAHANNYA: Variabel untuk Total Bayar dan Gambar Poster
+    Public Transisi_Total_Bayar As Decimal = 0
+    Public Transisi_Poster_Film As Image = Nothing
 
     ' ==========================================
     ' 4. FUNGSI GLOBAL 
@@ -51,5 +62,39 @@ Module Modul_Global
             KoneksiDB.Close()
         End If
     End Sub
+
+    ' ==========================================
+    ' 5. FUNGSI TAMBAHAN (HELPER)
+    ' ==========================================
+
+    ' [TAMBAHAN] Fungsi untuk mengubah tipe data BLOB/Byte dari Database MySQL menjadi Gambar (Image)
+    ' Ini sangat berguna saat kamu menarik Poster Film dari database untuk ditampilkan di PictureBox
+    Public Function KonversiByteKeGambar(ByVal byteArrayIn As Byte()) As Image
+        Try
+            Using ms As New MemoryStream(byteArrayIn)
+                Return Image.FromStream(ms)
+            End Using
+        Catch ex As Exception
+            Return Nothing ' Mengembalikan nilai kosong jika gagal/gambar korup
+        End Try
+    End Function
+
+    ' [TAMBAHAN] Fungsi untuk menjalankan query sederhana (Insert, Update, Delete)
+    ' Ini membuat kodemu di form lain lebih bersih tanpa perlu menulis Try-Catch koneksi terus menerus
+    Public Function EksekusiQuery(ByVal query As String) As Boolean
+        Dim statusBerhasil As Boolean = False
+        Try
+            BukaKoneksi()
+            Using cmd As New MySqlCommand(query, KoneksiDB)
+                cmd.ExecuteNonQuery()
+                statusBerhasil = True
+            End Using
+        Catch ex As Exception
+            MessageBox.Show("Gagal mengeksekusi data: " & ex.Message, "Error Database", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            TutupKoneksi()
+        End Try
+        Return statusBerhasil
+    End Function
 
 End Module

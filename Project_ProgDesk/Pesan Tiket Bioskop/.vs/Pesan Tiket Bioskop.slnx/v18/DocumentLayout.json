@@ -1,18 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\",
+  "WorkspaceRootPath": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih studio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih studio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:e-ticket \u0026 kode qr.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\e-ticket \u0026 kode qr.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:e-ticket \u0026 kode qr.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih studio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih studio.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih studio.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih studio.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\beranda.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:beranda.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih kursi.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\ngampus\\semester 6\\progdesk\\projects\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih kursi.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\konfirmasi pembayaran.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:konfirmasi pembayaran.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\beranda.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:beranda.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:konfirmasi pembayaran.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\e-ticket \u0026 kode qr.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:e-ticket \u0026 kode qr.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih jadwal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih jadwal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\register.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:register.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\pilih kursi.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:pilih kursi.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|d:\\semester 6\\project_pemrograman_desktop_bioskop\\project_progdesk\\pesan tiket bioskop\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{3C3F1A4A-6560-ED76-1A7A-4AAEA6121ED8}|Pesan Tiket Bioskop.vbproj|solutionrelative:login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +90,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -35,40 +115,251 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pilih Kursi.vb",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb",
-              "RelativeDocumentMoniker": "Pilih Kursi.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb",
-              "RelativeToolTip": "Pilih Kursi.vb",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAmwKIAAAApAAAAAAAAAA==",
+              "Title": "Pilih Studio.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Studio.vb",
+              "RelativeDocumentMoniker": "Pilih Studio.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Studio.vb",
+              "RelativeToolTip": "Pilih Studio.vb",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T08:59:39.547Z",
+              "WhenOpened": "2026-05-15T13:39:40.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Pilih Kursi.Designer.vb",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.Designer.vb",
-              "RelativeDocumentMoniker": "Pilih Kursi.Designer.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.Designer.vb",
-              "RelativeToolTip": "Pilih Kursi.Designer.vb",
-              "ViewState": "AgIAAPIAAAAAAAAAAAAgwDkBAAAJAAAAAAAAAA==",
+              "Title": "E-Ticket \u0026 Kode QR.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb",
+              "RelativeDocumentMoniker": "E-Ticket \u0026 Kode QR.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb",
+              "RelativeToolTip": "E-Ticket \u0026 Kode QR.vb",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T08:59:35.11Z",
+              "WhenOpened": "2026-05-15T09:23:43.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Konfirmasi Pembayaran.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb",
+              "RelativeDocumentMoniker": "Konfirmasi Pembayaran.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb",
+              "RelativeToolTip": "Konfirmasi Pembayaran.vb",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T09:23:43.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "E-Ticket \u0026 Kode QR.vb [Design]",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb",
+              "RelativeDocumentMoniker": "E-Ticket \u0026 Kode QR.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.vb [Design]",
+              "RelativeToolTip": "E-Ticket \u0026 Kode QR.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T09:23:43.957Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "E-Ticket \u0026 Kode QR.Designer.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.Designer.vb",
+              "RelativeDocumentMoniker": "E-Ticket \u0026 Kode QR.Designer.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.Designer.vb",
+              "RelativeToolTip": "E-Ticket \u0026 Kode QR.Designer.vb",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAcwG8BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T13:13:06.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pilih Studio.vb [Design]",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Studio.vb",
+              "RelativeDocumentMoniker": "Pilih Studio.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Studio.vb [Design]",
+              "RelativeToolTip": "Pilih Studio.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T13:35:21.448Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pilih Studio.Designer.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Studio.Designer.vb",
+              "RelativeDocumentMoniker": "Pilih Studio.Designer.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Studio.Designer.vb",
+              "RelativeToolTip": "Pilih Studio.Designer.vb",
+              "ViewState": "AgIAAAACAAAAAAAAAAAiwB8CAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T13:40:25.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Beranda.vb [Design]",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.vb",
+              "RelativeDocumentMoniker": "Beranda.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.vb [Design]",
+              "RelativeToolTip": "Beranda.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T15:27:41.242Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Pilih Kursi.vb [Design]",
-              "DocumentMoniker": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb",
               "RelativeDocumentMoniker": "Pilih Kursi.vb",
-              "ToolTip": "D:\\Ngampus\\Semester 6\\ProgDesk\\Projects\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb [Design]",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb [Design]",
               "RelativeToolTip": "Pilih Kursi.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2026-05-15T04:19:44.618Z",
+              "WhenOpened": "2026-05-15T09:23:43.957Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pilih Kursi.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb",
+              "RelativeDocumentMoniker": "Pilih Kursi.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.vb",
+              "RelativeToolTip": "Pilih Kursi.vb",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T09:28:40.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pilih Kursi.Designer.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.Designer.vb",
+              "RelativeDocumentMoniker": "Pilih Kursi.Designer.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.Designer.vb",
+              "RelativeToolTip": "Pilih Kursi.Designer.vb",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAcwA4BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T09:28:40.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Konfirmasi Pembayaran.Designer.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.Designer.vb",
+              "RelativeDocumentMoniker": "Konfirmasi Pembayaran.Designer.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.Designer.vb",
+              "RelativeToolTip": "Konfirmasi Pembayaran.Designer.vb",
+              "ViewState": "AgIAAIwBAAAAAAAAAAAcwK0BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T12:37:23.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Beranda.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.vb",
+              "RelativeDocumentMoniker": "Beranda.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Beranda.vb",
+              "RelativeToolTip": "Beranda.vb",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwL8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T09:23:43.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Module1.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Module1.vb",
+              "RelativeDocumentMoniker": "Module1.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Module1.vb",
+              "RelativeToolTip": "Module1.vb",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwGMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T12:10:08.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Konfirmasi Pembayaran.vb [Design]",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb",
+              "RelativeDocumentMoniker": "Konfirmasi Pembayaran.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Konfirmasi Pembayaran.vb [Design]",
+              "RelativeToolTip": "Konfirmasi Pembayaran.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T12:07:37.051Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "E-Ticket \u0026 Kode QR.resx",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.resx",
+              "RelativeDocumentMoniker": "E-Ticket \u0026 Kode QR.resx",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\E-Ticket \u0026 Kode QR.resx",
+              "RelativeToolTip": "E-Ticket \u0026 Kode QR.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-15T13:13:05.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Pilih Jadwal.vb [Design]",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Jadwal.vb",
+              "RelativeDocumentMoniker": "Pilih Jadwal.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Jadwal.vb [Design]",
+              "RelativeToolTip": "Pilih Jadwal.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T12:07:33.205Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Register.vb [Design]",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Register.vb",
+              "RelativeDocumentMoniker": "Register.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Register.vb [Design]",
+              "RelativeToolTip": "Register.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T12:07:20.146Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Pilih Kursi.resx",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.resx",
+              "RelativeDocumentMoniker": "Pilih Kursi.resx",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Pilih Kursi.resx",
+              "RelativeToolTip": "Pilih Kursi.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-15T09:28:53.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.vb",
+              "DocumentMoniker": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
+              "RelativeDocumentMoniker": "Login.vb",
+              "ToolTip": "D:\\semester 6\\Project_Pemrograman_Desktop_Bioskop\\Project_ProgDesk\\Pesan Tiket Bioskop\\Login.vb",
+              "RelativeToolTip": "Login.vb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-05-15T09:23:43.957Z"
             }
           ]
         }

@@ -1,179 +1,147 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.IO
 
-Public Class PilihKursi
+Public Class Pilih_Kursi
+    ' Variabel untuk menyimpan kursi yang dipilih
+    Dim listKursiTerpilih As New List(Of String)
+    Dim hargaPerTiket As Decimal = 0
 
-    ' --- DATA DARI FORM SEBELUMNYA ---
-    <System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)>
-    Public Property SelectedJadwalID As String
-    Public JudulFilmTerpilih As String = "Tim Tim"
-    Public InfoJadwal As String = "Sindia, 11 12 Ster | 14:00"
-    Public IdStudioTerpilih As String = "1"
+    Private Sub Pilih_Kursi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Cek apakah harga tiket terbawa
+        If Val(Transisi_Harga_Tiket) = 0 Then
+            MessageBox.Show("Harga tiket belum terbawa dari form sebelumnya!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
 
-    ' --- PENYIMPANAN SEMENTARA ---
-    Private ListKursiDipilih As New List(Of String)
+        hargaPerTiket = Transisi_Harga_Tiket
 
-    ' --- PENGATURAN WARNA KURSI ---
-    Private WarnaTersedia As Color = Color.White
-    Private WarnaDipesan As Color = Color.IndianRed
-    Private WarnaDipilih As Color = Color.FromArgb(46, 139, 135) ' Tosca Gelap
-    Private WarnaTerblokir As Color = Color.Gray
-
-    ' --- KONFIGURASI DATABASE ---
-    ' Sesuaikan 'database=db_bioskop' dengan nama database Anda di phpMyAdmin
-    Dim connectionString As String = "server=localhost;user id=root;password=;database=bioskop_db"
-    Dim conn As MySqlConnection
-
-    Private Sub PilihKursi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Set label detail film
-        LblDetailInfo.Text = JudulFilmTerpilih & " | " & InfoJadwal
-
-        ' Buat Garis Layar
-        Dim line As New Label With {.BorderStyle = BorderStyle.Fixed3D, .Height = 2, .Width = 540, .Top = 15, .Left = 0}
-        PnlLayar.Controls.Add(line)
-        LblLayar.BringToFront()
-
-        ' 1. Bikin semua tombol kursi (A1 sampai H14)
-        GenerateKursi()
-
-        ' 2. Cek database untuk melihat kursi mana yang Aktif (Tersedia) atau Non-Aktif (Terblokir)
-        MuatStatusKursiDariDB()
+        MuatDetailPesanan()
+        BuatDenahKursi()
     End Sub
 
-    Private Sub GenerateKursi()
-        Dim baris As String() = {"A", "B", "C", "D", "E", "F", "G", "H"}
-        Dim jumlahKolom As Integer = 14
+    ' --- FUNGSI 1: MENGISI PANEL KANAN (LANGSUNG DARI VARIABEL) ---
+    Private Sub MuatDetailPesanan()
+        ' Menampilkan Teks
+        LblJudulDetail.Text = Transisi_Judul_Film ' Ganti LblJudulDetail sesuai nama Label-mu
+        LblStudioDetail.Text = "CinemaHub, " & Transisi_Nama_Studio
+        LblWaktuDetail.Text = Transisi_Waktu_Tayang
 
-        Dim ukuranKursi As Integer = 30
-        Dim jarak As Integer = 6
+        ' Menampilkan Poster
+        If Transisi_Poster_Film IsNot Nothing Then
+            PicPosterDetail.Image = Transisi_Poster_Film ' Ganti PicPosterDetail sesuai nama PictureBox-mu
+            PicPosterDetail.SizeMode = PictureBoxSizeMode.StretchImage ' Agar pas di kotak
+        End If
+    End Sub
 
-        For i As Integer = 0 To baris.Length - 1
-            Dim posisiX As Integer = 0
+    ' --- FUNGSI 2: MEMBUAT KOTAK-KOTAK KURSI SECARA OTOMATIS ---
+    Private Sub BuatDenahKursi()
+        FlpKursi.Controls.Clear()
 
-            For j As Integer = 1 To jumlahKolom
-                ' Lorong (Jeda Kosong)
-                If j = 3 Then posisiX += 20
-                If j = 13 Then posisiX += 20
+        ' [TAMBAHAN] Menambah array huruf agar kursi turun sampai bawah (sampai J)
+        Dim baris As String() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
+        Dim jumlahKolom As Integer = 10
 
-                Dim btnKursi As New Button() With {
-                    .Name = "Btn_" & baris(i) & j.ToString(),
-                    .Text = "",
-                    .Tag = baris(i) & j.ToString(), ' Tag menyimpan Kode_Kursi (contoh: "A1")
-                    .Size = New Size(ukuranKursi, ukuranKursi),
-                    .Location = New Point(posisiX, i * (ukuranKursi + jarak)),
-                    .BackColor = WarnaTersedia,
+        ' [TAMBAHAN] Simulasi data kursi yang sudah diambil orang. 
+        ' Nanti ini bisa kamu ganti dengan data hasil query dari database MySQL.
+        Dim kursiSudahTerisi As String() = {"C4", "C5", "D5", "F1"}
+
+        For Each b In baris
+            For i As Integer = 1 To jumlahKolom
+                Dim nomorKursi As String = b & i.ToString()
+
+                Dim btnKursi As New Button With {
+                    .Text = nomorKursi,
+                    .Size = New Size(45, 45),
                     .FlatStyle = FlatStyle.Flat,
+                    .Font = New Font("Segoe UI", 9.0F, FontStyle.Bold),
+                    .Margin = New Padding(5),
                     .Cursor = Cursors.Hand
                 }
-                btnKursi.FlatAppearance.BorderColor = Color.DarkGray
+                btnKursi.FlatAppearance.BorderColor = Color.LightGray
 
-                ' Event Klik
-                AddHandler btnKursi.Click, AddressOf Kursi_Click
+                ' [TAMBAHAN] Logika pengecekan apakah kursi sudah diambil orang
+                If kursiSudahTerisi.Contains(nomorKursi) Then
+                    ' Tampilan jika kursi SUDAH DIAMBIL (Warna Abu-abu Gelap & Dimatikan)
+                    btnKursi.BackColor = Color.Silver
+                    btnKursi.ForeColor = Color.White
+                    btnKursi.Enabled = False ' Tidak bisa diklik
+                    btnKursi.Tag = "Terjual"
+                Else
+                    ' Tampilan jika kursi TERSEDIA
+                    btnKursi.BackColor = Color.WhiteSmoke
+                    btnKursi.ForeColor = Color.DimGray
+                    btnKursi.Tag = "Tersedia"
+                End If
 
-                PnlKursi.Controls.Add(btnKursi)
+                ' Memberi jarak di tengah untuk lorong (setelah kolom ke-5)
+                If i = 5 Then
+                    btnKursi.Margin = New Padding(5, 5, 40, 5)
+                End If
 
-                posisiX += ukuranKursi + jarak
+                AddHandler btnKursi.Click, AddressOf TombolKursi_Click
+                FlpKursi.Controls.Add(btnKursi)
             Next
         Next
     End Sub
 
-    ''' <summary>
-    ''' Mengambil status kursi dari tabel 'seats' berdasarkan ID_Studio
-    ''' </summary>
-    Private Sub MuatStatusKursiDariDB()
-        Try
-            conn = New MySqlConnection(connectionString)
-            conn.Open()
+    ' --- FUNGSI 3: LOGIKA KLIK KURSI ---
+    Private Sub TombolKursi_Click(sender As Object, e As EventArgs)
+        Dim btn As Button = CType(sender, Button)
+        Dim nomor As String = btn.Text
 
-            ' Ambil data kursi untuk studio yang dipilih
-            Dim query As String = "SELECT Kode_Kursi, Status_Aktif FROM seats WHERE ID_Studio = @idStudio"
-            Dim cmd As New MySqlCommand(query, conn)
-            cmd.Parameters.AddWithValue("@idStudio", IdStudioTerpilih)
-
-            Dim reader As MySqlDataReader = cmd.ExecuteReader()
-
-            ' Looping data dari database
-            While reader.Read()
-                Dim kodeKursi As String = reader("Kode_Kursi").ToString()
-                Dim statusAktif As Integer = Convert.ToInt32(reader("Status_Aktif"))
-
-                ' Cari tombol di panel yang Tag-nya sama dengan Kode_Kursi di DB
-                For Each ctrl As Control In PnlKursi.Controls
-                    If TypeOf ctrl Is Button Then
-                        Dim btn As Button = DirectCast(ctrl, Button)
-
-                        If btn.Tag IsNot Nothing AndAlso btn.Tag.ToString() = kodeKursi Then
-                            ' Update warna berdasarkan Status_Aktif
-                            If statusAktif = 1 Then
-                                btn.BackColor = WarnaTersedia
-                            Else
-                                btn.BackColor = WarnaTerblokir
-                                btn.Cursor = Cursors.No ' Ubah kursor jadi tanda dilarang
-                            End If
-                            Exit For ' Lanjut ke data dari database berikutnya
-                        End If
-                    End If
-                Next
-            End While
-
-            reader.Close()
-
-        Catch ex As Exception
-            MessageBox.Show("Gagal terhubung ke Database: " & ex.Message, "Error XAMPP", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Finally
-            If conn.State = ConnectionState.Open Then conn.Close()
-        End Try
-    End Sub
-
-    Private Sub Kursi_Click(sender As Object, e As EventArgs)
-        Dim btn As Button = DirectCast(sender, Button)
-        Dim nomorKursi As String = btn.Tag.ToString()
-
-        ' Tolak klik jika kursi dipesan (merah) atau terblokir (abu-abu)
-        If btn.BackColor = WarnaDipesan OrElse btn.BackColor = WarnaTerblokir Then
-            Return
+        If btn.Tag.ToString() = "Tersedia" Then
+            ' Tandai Terpilih (Hijau/Teal)
+            btn.BackColor = Color.Teal
+            btn.ForeColor = Color.White
+            btn.Tag = "Terpilih"
+            listKursiTerpilih.Add(nomor)
+        ElseIf btn.Tag.ToString() = "Terpilih" Then
+            ' Batalkan pilihan (Kembali ke Abu-abu)
+            btn.BackColor = Color.WhiteSmoke
+            btn.ForeColor = Color.DimGray
+            btn.Tag = "Tersedia"
+            listKursiTerpilih.Remove(nomor)
         End If
 
-        ' Logika Pilih / Batal (Putih <-> Tosca)
-        If btn.BackColor = WarnaTersedia Then
-            btn.BackColor = WarnaDipilih
-            ListKursiDipilih.Add(nomorKursi)
+        UpdateTotalHarga()
+    End Sub
+
+    ' --- FUNGSI 4: MENGHITUNG TOTAL & UPDATE PANEL KANAN ---
+    Private Sub UpdateTotalHarga()
+        If listKursiTerpilih.Count = 0 Then
+            LblKursiTerpilih.Text = "-"
+            LblTotalHarga.Text = "Rp0"
         Else
-            btn.BackColor = WarnaTersedia
-            ListKursiDipilih.Remove(nomorKursi)
-        End If
-
-        UpdateTeksBawah()
-    End Sub
-
-    Private Sub UpdateTeksBawah()
-        If ListKursiDipilih.Count = 0 Then
-            LblKursiDipilih.Text = "Kursi yang dipilih: -"
-        Else
-            ListKursiDipilih.Sort()
-            LblKursiDipilih.Text = "Kursi yang dipilih: " & String.Join(", ", ListKursiDipilih)
+            LblKursiTerpilih.Text = String.Join(", ", listKursiTerpilih)
+            Dim total As Decimal = listKursiTerpilih.Count * hargaPerTiket
+            ' Pastikan kamu punya Function FormatRupiah di Module1
+            LblTotalHarga.Text = FormatRupiah(total)
         End If
     End Sub
 
-    Private Sub BtnLanjut_Click(sender As Object, e As EventArgs) Handles BtnLanjut.Click
-        If ListKursiDipilih.Count = 0 Then
-            MessageBox.Show("Pilih minimal 1 kursi terlebih dahulu!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        MessageBox.Show("Lanjut ke pembayaran. Kursi: " & String.Join(", ", ListKursiDipilih), "Sukses")
-        FormPembayaran.Show() ' Uncomment ini jika form pembayaran sudah ada
-    End Sub
-
-    Private Sub PnlKursi_Paint(sender As Object, e As PaintEventArgs) Handles PnlKursi.Paint
-
-    End Sub
-
-    ' --- EVENT TOMBOL BACK ---
-    Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
-        ' Membuka kembali halaman Pilih Studio
-        Pilih_Studio.Show()
-        ' Menutup halaman Pilih Kursi saat ini
+    'TOMBOL KEMBALI DI ATAS TOMBOL LANJUT BAYAR'
+    ' =====================================================================
+    Private Sub BtnKembali_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
+        ' Kembali ke halaman Pilih Studio (sesuaikan dengan nama form sebelumnya jika berbeda)
+        Dim formStudio As New Pilih_Studio()
+        formStudio.Show()
         Me.Close()
     End Sub
 
+    ' --- FUNGSI 5: TOMBOL LANJUT BAYAR ---
+    Private Sub BtnLanjutBayar_Click(sender As Object, e As EventArgs) Handles BtnLanjutBayar.Click
+        If listKursiTerpilih.Count = 0 Then
+            MessageBox.Show("Silakan pilih minimal 1 kursi terlebih dahulu!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        ' 1. Simpan data kursi dan total harga ke variabel global (Module1)
+        Transisi_Daftar_Kursi = String.Join(", ", listKursiTerpilih)
+        Transisi_Total_Bayar = listKursiTerpilih.Count * hargaPerTiket
+
+        ' 2. Pindah ke form pembayaran
+        ' (Ganti "FormPembayaran" dengan nama form pembayaran aslimu yang sebenarnya)
+        Dim formBayar As New FormPembayaran()
+        formBayar.Show()
+        Me.Close() ' Tutup form kursi ini
+    End Sub
 End Class
