@@ -224,4 +224,5 @@ Partial Class Beranda
     Friend WithEvents MenuAbout As ToolStripMenuItem
     Friend WithEvents SepLogout As ToolStripSeparator
     Friend WithEvents MenuLogout As ToolStripMenuItem
+
 End Class

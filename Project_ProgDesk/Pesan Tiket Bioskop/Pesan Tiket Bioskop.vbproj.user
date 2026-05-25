@@ -4,9 +4,6 @@
     <Compile Update="Beranda.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="E-Ticket &amp; Kode QR.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Konfirmasi Pembayaran.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -22,7 +19,16 @@
     <Compile Update="Pilih Studio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ProfilSaya.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RiwayatTiket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TentangKami.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

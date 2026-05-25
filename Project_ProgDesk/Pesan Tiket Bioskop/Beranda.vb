@@ -27,7 +27,7 @@ Public Class Beranda
             ' 1. Pencarian Judul
             Dim query As String = "SELECT * FROM movies WHERE Judul_Film LIKE @cari"
 
-            ' 2. PENTING: Gunakan LIKE untuk Genre, bukan tanda sama dengan (=)
+            ' 2. Gunakan LIKE untuk Genre
             If filterGenre <> "Semua" Then
                 query &= " AND Genre LIKE @genre"
             End If
@@ -35,7 +35,7 @@ Public Class Beranda
             Dim cmd As New MySqlCommand(query, conn)
             cmd.Parameters.AddWithValue("@cari", "%" & kataKunci.Trim() & "%")
 
-            ' 3. PENTING: Apit kata kunci genre dengan simbol % agar terbaca meskipun genrenya gabungan
+            ' 3. Apit kata kunci genre dengan simbol %
             If filterGenre <> "Semua" Then
                 cmd.Parameters.AddWithValue("@genre", "%" & filterGenre.Trim() & "%")
             End If
@@ -82,7 +82,6 @@ Public Class Beranda
     ''' Membuat tampilan kartu film secara dinamis di FlowLayoutPanel
     ''' </summary>
     Private Sub BuatCardFilm(id As String, judul As String, genre As String, durasi As String, posterPath As String)
-        ' <-- UBAH UKURAN: Tinggi diubah menjadi 320 agar poster muat
         Dim pnlCard As New Panel With {
             .Size = New Size(200, 320),
             .BackColor = Color.White,
@@ -108,14 +107,13 @@ Public Class Beranda
             .Height = 30
         }
 
-        ' <-- TAMBAHAN: Membuat elemen PictureBox untuk foto
         Dim picPoster As New PictureBox With {
             .Dock = DockStyle.Fill,
             .SizeMode = PictureBoxSizeMode.Zoom,
-            .BackColor = Color.FromArgb(240, 240, 240) ' Warna abu-abu terang jika gambar gagal dimuat
+            .BackColor = Color.FromArgb(240, 240, 240)
         }
 
-        ' <-- TAMBAHAN: Memuat file gambar dari folder Images
+        ' Memuat file gambar dari folder Images
         If Not String.IsNullOrEmpty(posterPath) Then
             Dim folderImages As String = Path.Combine(Application.StartupPath, "Images")
             Dim pathLengkap As String = Path.Combine(folderImages, posterPath)
@@ -138,33 +136,27 @@ Public Class Beranda
         btnPesan.FlatAppearance.BorderSize = 0
         btnPesan.Tag = id ' Menyimpan ID_Film
 
-        ' =========================================================================
-        ' PERUBAHAN DI SINI: Menyimpan Judul dan Poster ke Global sebelum pindah
-        ' =========================================================================
+        ' Pindah ke halaman Pilih Studio
         AddHandler btnPesan.Click, Sub(sender As Object, e As EventArgs)
                                        Dim idFilm = DirectCast(sender, Button).Tag.ToString()
-
-                                       ' 1. Simpan Data Film ke variabel global
                                        Transisi_ID_Film = idFilm
-                                       Transisi_Judul_Film = judul ' Mengambil dari parameter Sub BuatCardFilm
-                                       Transisi_Poster_Film = picPoster.Image ' Mengambil dari gambar yang sedang tampil
+                                       Transisi_Judul_Film = judul
+                                       Transisi_Poster_Film = picPoster.Image
 
-                                       ' 2. Buka halaman Pilih Studio
                                        Dim formStudio As New Pilih_Studio()
                                        formStudio.Show()
                                        Me.Hide()
                                    End Sub
 
-        ' <-- PENTING: Urutan penambahan ini mengatur posisinya (Docking)
-        pnlCard.Controls.Add(picPoster) ' Masuk ke sisa ruang di tengah
-        pnlCard.Controls.Add(lblDetail) ' Nempel di atas (di bawah judul)
-        pnlCard.Controls.Add(lblJudul)  ' Nempel di atas sendiri
-        pnlCard.Controls.Add(btnPesan)  ' Nempel di bawah
+        pnlCard.Controls.Add(picPoster)
+        pnlCard.Controls.Add(lblDetail)
+        pnlCard.Controls.Add(lblJudul)
+        pnlCard.Controls.Add(btnPesan)
 
         FlpMovies.Controls.Add(pnlCard)
     End Sub
 
-    ' --- EVENT HANDLERS ---
+    ' --- EVENT HANDLERS PENCARIAN & FILTER ---
 
     Private Sub BtnCari_Click(sender As Object, e As EventArgs) Handles BtnCari.Click
         MuatDaftarFilmDariDB(TxtCari.Text, CmbGenre.SelectedItem.ToString())
@@ -176,7 +168,23 @@ Public Class Beranda
         End If
     End Sub
 
-    ' Logout Handler: Menutup Beranda dan membuka Login
+    ' --- EVENT HANDLERS MENU AKUN (SUDAH DIPERBAIKI) ---
+
+    Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
+        Dim profilForm As New ProfilSaya()
+        profilForm.ShowDialog()
+    End Sub
+
+    Private Sub MenuHistory_Click(sender As Object, e As EventArgs) Handles MenuHistory.Click
+        Dim riwayatForm As New RiwayatTiket()
+        riwayatForm.ShowDialog()
+    End Sub
+
+    Private Sub MenuAbout_Click(sender As Object, e As EventArgs) Handles MenuAbout.Click
+        Dim tentangForm As New TentangKami()
+        tentangForm.ShowDialog()
+    End Sub
+
     Private Sub MenuLogout_Click(sender As Object, e As EventArgs) Handles MenuLogout.Click
         Dim tanya = MessageBox.Show("Apakah Anda yakin ingin logout?", "Konfirmasi Keluar", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
@@ -186,7 +194,4 @@ Public Class Beranda
         End If
     End Sub
 
-    Private Sub MenuProfil_Click(sender As Object, e As EventArgs) Handles MenuProfil.Click
-        MessageBox.Show("Halaman Profil sedang dalam pengembangan.", "Informasi")
-    End Sub
 End Class

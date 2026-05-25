@@ -290,7 +290,7 @@ Partial Class E_Ticket___Kode_QR
         Me.BtnSimpan.Name = "BtnSimpan"
         Me.BtnSimpan.Size = New System.Drawing.Size(400, 60)
         Me.BtnSimpan.TabIndex = 8
-        Me.BtnSimpan.Text = "💾 Simpan ke Memori Perangkat"
+        Me.BtnSimpan.Text = "💾 Kirim ke Email"
         Me.BtnSimpan.UseVisualStyleBackColor = False
         ' 
         ' BtnKeluar
