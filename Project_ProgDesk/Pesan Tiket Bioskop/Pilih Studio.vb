@@ -1,7 +1,9 @@
-﻿Public Class Pilih_Studio
+﻿Imports MySql.Data.MySqlClient
 
-    ' [TAMBAHAN] Variabel untuk menyimpan tanggal yang sedang dipilih
-    Dim tanggalTerpilih As String = ""
+Public Class Pilih_Studio
+
+    Dim tanggalTerpilihUI As String = ""
+    Dim tanggalTerpilihDB As String = ""
 
     Private Sub Pilih_Studio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Transisi_Judul_Film <> "" Then
@@ -9,9 +11,7 @@
             LblFilmTitleRight.Text = "Film: " & Transisi_Judul_Film
         End If
 
-        ' [TAMBAHAN] Panggil fungsi pembuat tombol tanggal
         BuatPilihanTanggal()
-        MuatSemuaStudio()
     End Sub
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
@@ -20,149 +20,179 @@
         Me.Close()
     End Sub
 
-    Private Sub MuatSemuaStudio()
+    ' ====================================================================
+    ' MEMUAT JADWAL SESUAI KOLOM: ID_Studio, Tanggal_Tayang, Waktu_Mulai, Harga_Tiket
+    ' ====================================================================
+    Private Sub MuatJadwalDariDB(tanggalPencarian As String)
         FlowLayoutStudios.Controls.Clear()
         FlowLayoutStudios.FlowDirection = FlowDirection.TopDown
         FlowLayoutStudios.WrapContents = False
 
-        ' Data statis / manual
-        Dim namaStudio() As String = {"Studio 1 (Normal)", "Studio 2 (Luxe)", "Studio Max (IMAX)"}
-        Dim hargaStudio() As Decimal = {45000, 60000, 85000}
-        Dim kapasitas() As String = {"150 Kursi", "80 Kursi", "250 Kursi"}
-        Dim fasilitas() As String = {
-            "Layar standar dengan kualitas Dolby Audio.",
-            "Kursi reclining seat dan layanan premium.",
-            "Layar raksasa IMAX dengan sound system luar biasa."
-        }
-        Dim jamTayang() As String = {"12:35", "14:40", "18:50", "20:55"}
-        Dim statusJam() As Boolean = {False, False, True, True}
+        If Val(Transisi_ID_Film) = 0 Then
+            MessageBox.Show("ID Film belum dipilih dari Beranda!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
 
-        For i As Integer = 0 To 2
-            Dim card As New Panel()
-            card.Size = New Size(530, 180)
-            card.BackColor = Color.White
-            card.BorderStyle = BorderStyle.FixedSingle
-            card.Margin = New Padding(0, 0, 0, 15)
+        Try
+            BukaKoneksi()
 
-            Dim lblJudul As New Label()
-            lblJudul.Text = namaStudio(i)
-            lblJudul.Font = New Font("Segoe UI", 12, FontStyle.Bold)
-            lblJudul.Location = New Point(20, 15)
-            lblJudul.AutoSize = True
-            card.Controls.Add(lblJudul)
+            ' FIX: Query menggunakan Tanggal_Tayang, ID_Studio, Waktu_Mulai, Harga_Tiket
+            Dim query As String = "SELECT ID_Jadwal, ID_Studio, Waktu_Mulai, Harga_Tiket FROM schedules WHERE ID_Film = @idFilm AND Tanggal_Tayang = @tgl ORDER BY ID_Studio ASC, Waktu_Mulai ASC"
+            Dim cmd As New MySqlCommand(query, KoneksiDB)
 
-            Dim lblHarga As New Label()
-            lblHarga.Text = "Rp " & hargaStudio(i).ToString("N0", New Globalization.CultureInfo("id-ID"))
-            lblHarga.Font = New Font("Segoe UI", 12, FontStyle.Bold)
-            lblHarga.ForeColor = Color.DimGray
-            lblHarga.Location = New Point(380, 15)
-            lblHarga.Size = New Size(130, 25)
-            lblHarga.TextAlign = ContentAlignment.TopRight
-            card.Controls.Add(lblHarga)
+            cmd.Parameters.AddWithValue("@idFilm", Transisi_ID_Film)
+            cmd.Parameters.AddWithValue("@tgl", tanggalPencarian)
 
-            Dim lblInfo As New Label()
-            lblInfo.Text = "Kapasitas: " & kapasitas(i) & vbCrLf & fasilitas(i)
-            lblInfo.Font = New Font("Segoe UI", 9)
-            lblInfo.ForeColor = Color.Gray
-            lblInfo.Location = New Point(20, 45)
-            lblInfo.Size = New Size(400, 40)
-            card.Controls.Add(lblInfo)
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
 
-            Dim flpWaktu As New FlowLayoutPanel()
-            flpWaktu.Location = New Point(20, 100)
-            flpWaktu.Size = New Size(480, 60)
-            flpWaktu.BackColor = Color.Transparent
+            If Not reader.HasRows Then
+                Dim lblKosong As New Label With {
+                    .Text = "Tidak ada jadwal tayang untuk tanggal ini.",
+                    .Font = New Font("Segoe UI", 11, FontStyle.Italic),
+                    .ForeColor = Color.Gray,
+                    .AutoSize = True,
+                    .Margin = New Padding(20)
+                }
+                FlowLayoutStudios.Controls.Add(lblKosong)
+                reader.Close()
+                Exit Sub
+            End If
 
-            For j As Integer = 0 To jamTayang.Length - 1
-                Dim btnJam As New Button()
-                btnJam.Text = jamTayang(j)
-                btnJam.Size = New Size(80, 40)
-                btnJam.FlatStyle = FlatStyle.Flat
-                btnJam.FlatAppearance.BorderSize = 0
-                btnJam.Font = New Font("Segoe UI", 10, FontStyle.Bold)
-                btnJam.Margin = New Padding(0, 0, 10, 0)
+            Dim currentStudioID As String = ""
+            Dim currentFlpWaktu As FlowLayoutPanel = Nothing
 
-                If statusJam(j) = True Then
-                    btnJam.BackColor = Color.Teal
-                    btnJam.ForeColor = Color.White
-                    btnJam.Cursor = Cursors.Hand
+            While reader.Read()
+                Dim idJadwal As String = reader("ID_Jadwal").ToString()
+                Dim idStudio As String = reader("ID_Studio").ToString() ' Membaca ID Studio (1, 2, 3)
+                Dim namaStudio As String = "Studio " & idStudio     ' Otomatis diubah jadi teks "Studio 1", dst.
 
-                    ' Menyimpan Nama Studio, Harga, dan Jam ke dalam tombol
-                    btnJam.Tag = namaStudio(i) & "|" & hargaStudio(i).ToString() & "|" & jamTayang(j)
-                    AddHandler btnJam.Click, AddressOf TombolJam_Click
-                Else
-                    btnJam.BackColor = Color.FromArgb(230, 230, 230)
-                    btnJam.ForeColor = Color.DarkGray
-                    btnJam.Enabled = False
+                Dim waktuJadwal As TimeSpan = CType(reader("Waktu_Mulai"), TimeSpan)
+                Dim stringWaktu As String = waktuJadwal.ToString("hh\:mm")
+                Dim hargaTiket As Decimal = Convert.ToDecimal(reader("Harga_Tiket"))
+
+                ' LOGIKA GROUPING: Membuat kartu baru jika ID Studio berubah
+                If idStudio <> currentStudioID Then
+                    currentStudioID = idStudio
+
+                    Dim card As New Panel With {
+                        .Size = New Size(530, 180),
+                        .BackColor = Color.White,
+                        .BorderStyle = BorderStyle.FixedSingle,
+                        .Margin = New Padding(0, 0, 0, 15)
+                    }
+
+                    Dim lblJudul As New Label With {
+                        .Text = namaStudio, ' Menampilkan teks "Studio 1 / 2 / 3"
+                        .Font = New Font("Segoe UI", 12, FontStyle.Bold),
+                        .Location = New Point(20, 15),
+                        .AutoSize = True
+                    }
+                    card.Controls.Add(lblJudul)
+
+                    Dim lblInfo As New Label With {
+                        .Text = "Fasilitas: Layar Digital Standar & Dolby Audio System." & vbCrLf & "Kapasitas: Berdasarkan kursi tersedia.",
+                        .Font = New Font("Segoe UI", 9),
+                        .ForeColor = Color.Gray,
+                        .Location = New Point(20, 45),
+                        .Size = New Size(400, 40)
+                    }
+                    card.Controls.Add(lblInfo)
+
+                    Dim lblHarga As New Label With {
+                        .Text = "Rp " & hargaTiket.ToString("N0", New Globalization.CultureInfo("id-ID")),
+                        .Font = New Font("Segoe UI", 12, FontStyle.Bold),
+                        .ForeColor = Color.DimGray,
+                        .Location = New Point(380, 15),
+                        .Size = New Size(130, 25),
+                        .TextAlign = ContentAlignment.TopRight
+                    }
+                    card.Controls.Add(lblHarga)
+
+                    currentFlpWaktu = New FlowLayoutPanel With {
+                        .Location = New Point(20, 100),
+                        .Size = New Size(480, 60),
+                        .BackColor = Color.Transparent
+                    }
+                    card.Controls.Add(currentFlpWaktu)
+
+                    FlowLayoutStudios.Controls.Add(card)
                 End If
-                flpWaktu.Controls.Add(btnJam)
-            Next
-            card.Controls.Add(flpWaktu)
-            FlowLayoutStudios.Controls.Add(card)
-        Next
+
+                ' Membuat tombol Jam digital
+                Dim btnJam As New Button With {
+                    .Text = stringWaktu,
+                    .Size = New Size(80, 40),
+                    .FlatStyle = FlatStyle.Flat,
+                    .Font = New Font("Segoe UI", 10, FontStyle.Bold),
+                    .Margin = New Padding(0, 0, 10, 0),
+                    .BackColor = Color.Teal,
+                    .ForeColor = Color.White,
+                    .Cursor = Cursors.Hand
+                }
+                btnJam.FlatAppearance.BorderSize = 0
+
+                ' Data dititipkan di properti Tag tombol (Nama Studio teks dikirim ke Form Kursi)
+                btnJam.Tag = namaStudio & "|" & hargaTiket.ToString() & "|" & stringWaktu & "|" & idJadwal
+                AddHandler btnJam.Click, AddressOf TombolJam_Click
+
+                currentFlpWaktu.Controls.Add(btnJam)
+            End While
+            reader.Close()
+
+        Catch ex As Exception
+            MessageBox.Show("Gagal terhubung ke database: " & ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            TutupKoneksi()
+        End Try
     End Sub
 
     Private Sub TombolJam_Click(sender As Object, e As EventArgs)
         Dim btn As Button = CType(sender, Button)
         Dim dataData() As String = btn.Tag.ToString().Split("|"c)
 
-        ' 1. Ambil data dari tombol yang diklik
-        Transisi_Nama_Studio = dataData(0)
+        Transisi_Nama_Studio = dataData(0) ' Isinya "Studio 1", "Studio 2", dll
         Transisi_Harga_Tiket = Convert.ToDecimal(dataData(1))
-
-        ' [PERUBAHAN KECIL]: Memakai variabel tanggalTerpilih + Jam yang diklik
-        Transisi_Waktu_Tayang = tanggalTerpilih & " | " & dataData(2)
-
+        Transisi_Waktu_Tayang = tanggalTerpilihUI & " | " & dataData(2)
+        Transisi_ID_Jadwal = dataData(3)
         Transisi_Daftar_Kursi = ""
 
-        ' 2. TAMBAHAN WAJIB: Kirim ID Jadwal supaya Form Kursi bisa cek database
-        ' Pastikan angka "1" ini benar-benar ada di kolom ID_Jadwal di database kamu.
-        ' Jika nanti halaman Pilih Studio ini sudah pakai database, angka 1 ini harus 
-        ' diganti dengan ID asli dari tabel jadwal.
-        Transisi_ID_Jadwal = "1"
-
-        ' 3. Buka form kursi
         Dim formKursi As New Pilih_Kursi()
         formKursi.Show()
         Me.Close()
     End Sub
 
     ' ========================================================
-    ' [TAMBAHAN] FUNGSI BARU: MEMBUAT TOMBOL TANGGAL OTOMATIS
+    ' FUNGSI GENERATE TOMBOL TANGGAL 
     ' ========================================================
     Private Sub BuatPilihanTanggal()
-        ' Pastikan FlpTanggal sudah ada di Form (Design)
         If FlpTanggal IsNot Nothing Then
             FlpTanggal.Controls.Clear()
-            FlpTanggal.WrapContents = False ' Agar tombol berjejer menyamping
+            FlpTanggal.WrapContents = False
 
-            ' Mengambil tanggal hari ini dari komputer
             Dim tanggalSekarang As DateTime = DateTime.Now
 
-            ' ========================================================
-            ' PERUBAHAN DI SINI: Diubah ke 29 agar melakukan loop sebanyak 30 hari (sebulan)
-            ' ========================================================
             For i As Integer = 0 To 29
                 Dim tgl As DateTime = tanggalSekarang.AddDays(i)
+                Dim formatDB As String = tgl.ToString("yyyy-MM-dd")
+                Dim formatUI As String = tgl.ToString("dd MMM yyyy")
 
                 Dim btnTgl As New Button With {
                     .Size = New Size(70, 70),
                     .FlatStyle = FlatStyle.Flat,
                     .Font = New Font("Segoe UI", 10, FontStyle.Bold),
-                    .Text = tgl.ToString("ddd") & vbCrLf & tgl.ToString("dd"), ' Contoh: Kam (enter) 28
-                    .Tag = tgl.ToString("dd MMM yyyy"), ' Format utuh: 28 Mei 2026
+                    .Text = tgl.ToString("ddd") & vbCrLf & tgl.ToString("dd"),
+                    .Tag = formatUI & "|" & formatDB,
                     .Cursor = Cursors.Hand,
                     .Margin = New Padding(5)
                 }
                 btnTgl.FlatAppearance.BorderSize = 0
 
-                ' Pewarnaan: Hari pertama (hari ini) otomatis terpilih (Teal)
                 If i = 0 Then
                     btnTgl.BackColor = Color.Teal
                     btnTgl.ForeColor = Color.White
-                    tanggalTerpilih = btnTgl.Tag.ToString()
+                    tanggalTerpilihUI = formatUI
+                    tanggalTerpilihDB = formatDB
                 Else
-                    ' Hari lainnya berwarna abu-abu
                     btnTgl.BackColor = Color.WhiteSmoke
                     btnTgl.ForeColor = Color.DimGray
                 End If
@@ -170,14 +200,12 @@
                 AddHandler btnTgl.Click, AddressOf TombolTanggal_Click
                 FlpTanggal.Controls.Add(btnTgl)
             Next
+
+            MuatJadwalDariDB(tanggalTerpilihDB)
         End If
     End Sub
 
-    ' ========================================================
-    ' [TAMBAHAN] EVENT KLIK UNTUK TANGGAL
-    ' ========================================================
     Private Sub TombolTanggal_Click(sender As Object, e As EventArgs)
-        ' 1. Reset warna semua tombol tanggal ke abu-abu
         For Each ctrl As Control In FlpTanggal.Controls
             If TypeOf ctrl Is Button Then
                 Dim btn As Button = DirectCast(ctrl, Button)
@@ -186,13 +214,15 @@
             End If
         Next
 
-        ' 2. Beri warna Teal pada tombol yang baru saja diklik
         Dim btnClicked As Button = DirectCast(sender, Button)
         btnClicked.BackColor = Color.Teal
         btnClicked.ForeColor = Color.White
 
-        ' 3. Simpan data tanggal ke variabel
-        tanggalTerpilih = btnClicked.Tag.ToString()
+        Dim data() As String = btnClicked.Tag.ToString().Split("|"c)
+        tanggalTerpilihUI = data(0)
+        tanggalTerpilihDB = data(1)
+
+        MuatJadwalDariDB(tanggalTerpilihDB)
     End Sub
 
 End Class

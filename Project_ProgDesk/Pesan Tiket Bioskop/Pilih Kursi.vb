@@ -36,13 +36,38 @@ Public Class Pilih_Kursi
     Private Sub BuatDenahKursi()
         FlpKursi.Controls.Clear()
 
-        ' [TAMBAHAN] Menambah array huruf agar kursi turun sampai bawah (sampai J)
+        ' 1. Siapkan List untuk menampung kursi yang sudah dipesan dari database
+        Dim kursiSudahTerisi As New List(Of String)()
+
+        ' Query untuk mencari kursi yang sudah di-booking pada Jadwal ini
+        ' dan status pembayarannya tidak 'Dibatalkan'
+        Dim query As String = "SELECT s.Kode_Kursi FROM booking_details bd " &
+                              "JOIN bookings b ON bd.ID_Booking = b.ID_Booking " &
+                              "JOIN seats s ON bd.ID_Kursi = s.ID_Kursi " &
+                              "WHERE b.ID_Jadwal = @ID_Jadwal AND b.Status != 'Dibatalkan'"
+        Try
+            BukaKoneksi()
+            Dim cmd As New MySqlCommand(query, KoneksiDB)
+            ' Pastikan variabel Transisi_ID_Jadwal sudah dikirim dari form Pilih_Studio
+            cmd.Parameters.AddWithValue("@ID_Jadwal", Transisi_ID_Jadwal)
+
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+
+            ' Masukkan setiap Kode_Kursi yang ditemukan ke dalam list
+            While reader.Read()
+                kursiSudahTerisi.Add(reader("Kode_Kursi").ToString())
+            End While
+            reader.Close()
+
+        Catch ex As Exception
+            MessageBox.Show("Error memuat status kursi: " & ex.Message, "Error Database", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            TutupKoneksi()
+        End Try
+
+        ' 2. Bikin kotak-kotak kursinya di layar
         Dim baris As String() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
         Dim jumlahKolom As Integer = 10
-
-        ' [TAMBAHAN] Simulasi data kursi yang sudah diambil orang. 
-        ' Nanti ini bisa kamu ganti dengan data hasil query dari database MySQL.
-        Dim kursiSudahTerisi As String() = {"C4", "C5", "D5", "F1"}
 
         For Each b In baris
             For i As Integer = 1 To jumlahKolom
@@ -58,12 +83,12 @@ Public Class Pilih_Kursi
                 }
                 btnKursi.FlatAppearance.BorderColor = Color.LightGray
 
-                ' [TAMBAHAN] Logika pengecekan apakah kursi sudah diambil orang
+                ' 3. Cek apakah nomor kursi ini ada di dalam List kursiSudahTerisi
                 If kursiSudahTerisi.Contains(nomorKursi) Then
-                    ' Tampilan jika kursi SUDAH DIAMBIL (Warna Abu-abu Gelap & Dimatikan)
+                    ' Tampilan jika kursi SUDAH DIAMBIL
                     btnKursi.BackColor = Color.Silver
                     btnKursi.ForeColor = Color.White
-                    btnKursi.Enabled = False ' Tidak bisa diklik
+                    btnKursi.Enabled = False ' Dimatikan agar tidak bisa diklik
                     btnKursi.Tag = "Terjual"
                 Else
                     ' Tampilan jika kursi TERSEDIA
